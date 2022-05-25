@@ -1,0 +1,225 @@
+.main-unit {
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background-repeat: no-repeat;
+  padding: 30px 0 45px;
+
+  @include vp-1023 {
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    padding-top: 38px;
+    padding-bottom: 81px;
+  }
+
+  @include vp-767 {
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+}
+
+.main-init__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-unit__content-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-unit__header {
+  width: 100%;
+  padding: 0 52px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: $color-default-white;
+  margin-bottom: -4px;
+
+  a {
+    color: $color-default-white;
+    margin: 0 20px;
+  }
+
+  p {
+    margin: 0 20px;
+  }
+
+  @include vp-1023 {
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 20px;
+
+    a, p {
+      margin: 0;
+    }
+  }
+}
+
+.main-unit__text-block {
+  text-align: right;
+  color: $color-default-white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 110px 65px 0 18px;
+  position: relative;
+
+  p {
+    font-family: "Bebas Neue";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 49px;
+    line-height: 59px;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+
+  h1 {
+    font-family: "Bebas Neue";
+    max-width: 377px;
+    font-size: 109px;
+    line-height: 109px;
+    letter-spacing: 0.03em;
+    margin: 0;
+    margin-bottom: 124px;
+  }
+
+  a {
+    position: absolute;
+    right: 65px;
+    bottom: 46px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 230px;
+    min-height: 57px;
+    color: $color-default-white;
+    border: 4px solid $color-default-white;
+    background-color: inherit;
+    padding: 17px 12px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  .main-unit__text-no-desktop-list {
+    display: none;
+  }
+
+  @include vp-1023 {
+    width: 50%;
+    padding: 46px 35px 0 85px;
+
+    p {
+      font-size: 34px;
+      line-height: 41px;
+      letter-spacing: 0.03em;
+    }
+
+    h1 {
+      font-size: 86px;
+      line-height: 86px;
+    }
+
+    a {
+      width: 186px;
+      min-height: 59px;
+      right: 32px;
+      bottom: 24px;
+    }
+
+    .main-unit__text-no-desktop-list {
+      position: absolute;
+      top: 187px;
+      left: 4px;
+      display: block;
+      font-family: 'Roboto Condensed';
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      text-transform: none;
+    }
+  }
+
+  @include vp-767 {
+    width: auto;
+    padding: 48px 0 0 0;
+    text-align: right;
+
+    h1 {
+      font-size: 78px;
+      line-height: 78px;
+    }
+
+    p {
+      font-size: 28px;
+      line-height: 34px;
+    }
+
+    .main-unit__text-no-desktop-list {
+      top: 173px;
+      left: -1px;
+    }
+
+    a {
+      min-height: 61px;
+      width: 102%;
+      bottom: 9px;
+      right: -2px;
+    }
+  }
+}
+
+.main-unit__list-block {
+  width: 15.4%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.main-unit__item {
+  margin-bottom: 18px;
+  p {
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-default-white;;
+  }
+}
+
+.main-unit__img-block {
+  img {
+    width: 500px;
+    height: 556px;
+  }
+
+  @include vp-1023 {
+    width: 324px;
+    img {
+      width: 324px;
+      height: 390px;
+    }
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}

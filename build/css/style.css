@@ -386,10 +386,26 @@ template {
 
 @font-face {
   font-style: normal;
+  font-weight: 300;
+  font-family: 'Bebas Neue';
+  font-display: swap;
+  src: local("Bebas Neue"), url("../fonts/bebas-neue-light.woff2") format("woff2"), url("../fonts/bebas-neue-light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 400;
   font-family: 'Bebas Neue';
   font-display: swap;
   src: local("Bebas Neue"), url("../fonts/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas-neue-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Bebas Neue';
+  font-display: swap;
+  src: local("Bebas Neue"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
 }
 
 @font-face {
@@ -435,7 +451,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto Condensed", "Bebas Neue", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -557,6 +573,12 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -775,6 +797,148 @@ button,
   pointer-events: auto;
 }
 
+.main-unit {
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background-repeat: no-repeat;
+  padding: 30px 0 45px;
+}
+
+.main-init__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.main-unit__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-unit__header {
+  width: 100%;
+  padding: 0 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: -4px;
+}
+
+.main-unit__header a {
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+.main-unit__header p {
+  margin: 0 20px;
+}
+
+.main-unit__text-block {
+  text-align: right;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 110px 65px 0 18px;
+  position: relative;
+}
+
+.main-unit__text-block p {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 49px;
+  line-height: 59px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.main-unit__text-block h1 {
+  font-family: "Bebas Neue";
+  max-width: 377px;
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 124px;
+}
+
+.main-unit__text-block a {
+  position: absolute;
+  right: 65px;
+  bottom: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 230px;
+  min-height: 57px;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  background-color: inherit;
+  padding: 17px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+}
+
+.main-unit__text-block .main-unit__text-no-desktop-list {
+  display: none;
+}
+
+.main-unit__list-block {
+  width: 15.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+}
+
+.main-unit__item {
+  margin-bottom: 18px;
+}
+
+.main-unit__item p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.main-unit__img-block img {
+  width: 500px;
+  height: 556px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -799,6 +963,68 @@ button,
   .container {
     padding: 0 24px;
   }
+
+  .main-unit {
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    padding-top: 38px;
+    padding-bottom: 81px;
+  }
+
+  .main-unit__header {
+    padding: 0;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+  }
+
+  .main-unit__text-block {
+    width: 50%;
+    padding: 46px 35px 0 85px;
+  }
+
+  .main-unit__text-block p {
+    font-size: 34px;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+  }
+
+  .main-unit__text-block h1 {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  .main-unit__text-block a {
+    width: 186px;
+    min-height: 59px;
+    right: 32px;
+    bottom: 24px;
+  }
+
+  .main-unit__text-block .main-unit__text-no-desktop-list {
+    position: absolute;
+    top: 187px;
+    left: 4px;
+    display: block;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: none;
+  }
+
+  .main-unit__list-block {
+    display: none;
+  }
+
+  .main-unit__img-block {
+    width: 324px;
+  }
+
+  .main-unit__img-block img {
+    width: 324px;
+    height: 390px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -817,5 +1043,53 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .main-unit {
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+
+  .main-unit__header {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-unit__header a,
+  .main-unit__header p {
+    margin: 0;
+  }
+
+  .main-unit__text-block {
+    width: auto;
+    padding: 48px 0 0 0;
+    text-align: right;
+  }
+
+  .main-unit__text-block h1 {
+    font-size: 78px;
+    line-height: 78px;
+  }
+
+  .main-unit__text-block p {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .main-unit__text-block .main-unit__text-no-desktop-list {
+    top: 173px;
+    left: -1px;
+  }
+
+  .main-unit__text-block a {
+    min-height: 61px;
+    width: 102%;
+    bottom: 9px;
+    right: -2px;
+  }
+
+  .main-unit__img-block {
+    display: none;
   }
 }
