@@ -386,10 +386,26 @@ template {
 
 @font-face {
   font-style: normal;
+  font-weight: 300;
+  font-family: 'Bebas Neue';
+  font-display: swap;
+  src: local("Bebas Neue"), url("../fonts/bebas-neue-light.woff2") format("woff2"), url("../fonts/bebas-neue-light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 400;
   font-family: 'Bebas Neue';
   font-display: swap;
   src: local("Bebas Neue"), url("../fonts/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas-neue-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Bebas Neue';
+  font-display: swap;
+  src: local("Bebas Neue"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
 }
 
 @font-face {
@@ -435,7 +451,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Roboto Condensed", "Bebas Neue", "Arial", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -557,6 +573,12 @@ button,
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -773,6 +795,148 @@ button,
   visibility: visible;
   opacity: 1;
   pointer-events: auto;
+}
+
+.main-unit {
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background-repeat: no-repeat;
+  padding: 30px 0 45px;
+}
+
+.main-init__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.main-unit__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-unit__header {
+  width: 100%;
+  padding: 0 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: -4px;
+}
+
+.main-unit__header a {
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+.main-unit__header p {
+  margin: 0 20px;
+}
+
+.main-unit__text-no-desktop {
+  display: none;
+}
+
+.main-unit__text-block {
+  text-align: right;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 110px 65px 0 18px;
+  position: relative;
+}
+
+.main-unit__text-block p {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 49px;
+  line-height: 59px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.main-unit__text-block h1 {
+  font-family: "Bebas Neue";
+  max-width: 377px;
+  font-size: 109px;
+  line-height: 109px;
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 124px;
+}
+
+.main-unit__text-block a {
+  position: absolute;
+  right: 65px;
+  bottom: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 230px;
+  min-height: 57px;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  background-color: inherit;
+  padding: 17px 12px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+}
+
+.main-unit__list-block {
+  width: 15.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-bottom: 25px;
+}
+
+.main-unit__item {
+  margin-bottom: 18px;
+}
+
+.main-unit__item p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.main-unit__img-block img {
+  width: 500px;
+  height: 556px;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
