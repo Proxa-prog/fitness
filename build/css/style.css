@@ -387,7 +387,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-display: swap;
   src: local("Bebas Neue"), url("../fonts/bebas-neue-light.woff2") format("woff2"), url("../fonts/bebas-neue-light.woff") format("woff");
 }
@@ -395,7 +395,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-display: swap;
   src: local("Bebas Neue"), url("../fonts/bebas-neue-regular.woff2") format("woff2"), url("../fonts/bebas-neue-regular.woff") format("woff");
 }
@@ -403,7 +403,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue";
   font-display: swap;
   src: local("Bebas Neue"), url("../fonts/bebas-neue-bold.woff2") format("woff2"), url("../fonts/bebas-neue-bold.woff") format("woff");
 }
@@ -411,7 +411,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: local("Roboto Condensed"), url("../fonts/roboto-condensed-light.woff2") format("woff2"), url("../fonts/roboto-condensed-light.woff") format("woff");
 }
@@ -419,7 +419,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: local("Roboto Condensed"), url("../fonts/roboto-condensed-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-regular.woff") format("woff");
 }
@@ -427,7 +427,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: local("Roboto Condensed"), url("../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed-bold.woff") format("woff");
 }
@@ -798,7 +798,7 @@ ul {
 }
 
 .main-unit {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   background-repeat: no-repeat;
   padding: 30px 0 49px;
 }
@@ -832,7 +832,7 @@ ul {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.02em;
@@ -859,7 +859,7 @@ ul {
 }
 
 .main-unit__text-block p {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 49px;
@@ -869,7 +869,7 @@ ul {
 }
 
 .main-unit__text-block h1 {
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   max-width: 377px;
   font-size: 109px;
   line-height: 109px;
@@ -958,8 +958,8 @@ ul {
   bottom: -38px;
   width: 72px;
   height: 72px;
-  background: -o-linear-gradient(45.11deg, #003D85 25.38%, #B80027 74.89%);
-  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+  background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
+  background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   border-radius: 50%;
   border: none;
   outline-offset: 11px;
@@ -968,7 +968,7 @@ ul {
 }
 
 .gym__img-container button::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 33px;
   bottom: 28px;
@@ -1025,7 +1025,7 @@ ul {
 }
 
 .gym__text h2 {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -1077,7 +1077,7 @@ ul {
   }
 
   .main-unit {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     padding-top: 38px;
     padding-bottom: 81px;
   }
@@ -1118,7 +1118,7 @@ ul {
     top: 187px;
     left: 4px;
     display: block;
-    font-family: 'Roboto Condensed';
+    font-family: "Roboto Condensed", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -1202,7 +1202,7 @@ ul {
     width: 100%;
     margin-right: 0;
     text-align: center;
-    padding: 0px 27px 44px 27px;
+    padding: 0 27px 44px 27px;
   }
 
   .gym__text h2 {
@@ -1250,7 +1250,7 @@ ul {
   }
 
   .main-unit {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     padding-top: 20px;
     padding-bottom: 70px;
   }
@@ -1302,7 +1302,7 @@ ul {
   }
 
   .gym__inner {
-    padding: 65px 0px 63px;
+    padding: 65px 0 63px;
   }
 
   .gym__img-container {
