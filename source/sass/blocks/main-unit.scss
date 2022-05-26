@@ -1,22 +1,22 @@
 .main-unit {
-  background: conic-gradient(from 130.31deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 130.31deg at 16.03% 39.06%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
   background-repeat: no-repeat;
-  padding: 30px 0 45px;
+  padding: 30px 0 49px;
 
   @include vp-1023 {
-    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
     padding-top: 38px;
     padding-bottom: 81px;
   }
 
   @include vp-767 {
-    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
     padding-top: 20px;
     padding-bottom: 70px;
   }
 }
 
-.main-init__inner {
+.main-unit__inner {
   display: flex;
   flex-wrap: wrap;
 }
@@ -33,7 +33,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", sans-serif;
   font-size: 26px;
   line-height: 26px;
   letter-spacing: 0.02em;
@@ -61,7 +61,8 @@
     font-size: 20px;
     line-height: 20px;
 
-    a, p {
+    a,
+    p {
       margin: 0;
     }
   }
@@ -76,7 +77,7 @@
   position: relative;
 
   p {
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 49px;
@@ -86,7 +87,7 @@
   }
 
   h1 {
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", sans-serif;
     max-width: 377px;
     font-size: 109px;
     line-height: 109px;
@@ -146,7 +147,7 @@
       top: 187px;
       left: 4px;
       display: block;
-      font-family: 'Roboto Condensed';
+      font-family: "Roboto Condensed", sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 150%;
@@ -198,10 +199,11 @@
 
 .main-unit__item {
   margin-bottom: 18px;
+
   p {
     font-size: 12px;
     line-height: 14px;
-    color: $color-default-white;;
+    color: $color-default-white;
   }
 }
 
@@ -213,6 +215,7 @@
 
   @include vp-1023 {
     width: 324px;
+
     img {
       width: 324px;
       height: 390px;
