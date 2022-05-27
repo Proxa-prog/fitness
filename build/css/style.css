@@ -1121,6 +1121,7 @@ ul {
 
 .subscription__item-month-current {
   position: relative;
+  color: #102654;
 }
 
 .subscription__item-month-current::before {
@@ -1143,6 +1144,25 @@ ul {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 19px 3px;
+}
+
+.subscription__cost-wrapper {
+  position: relative;
+}
+
+.subscription__cost-wrapper::before {
+  position: absolute;
+  z-index: -1;
+  top: -51px;
+  left: 0;
+  content: attr(data-price);
+  width: 203px;
+  height: 69px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+  color: #e8e8e8;
+  opacity: 0.48;
 }
 
 .subscription__item-cost {
@@ -1176,21 +1196,6 @@ ul {
   margin-top: 63px;
   margin-right: 50px;
   margin-bottom: 53px;
-}
-
-.subscription__item-cost .subscription__price::before {
-  position: absolute;
-  z-index: -1;
-  top: -51px;
-  left: 0;
-  content: attr(data-price);
-  width: 203px;
-  height: 69px;
-  font-weight: 700;
-  font-size: 100px;
-  line-height: 150%;
-  color: #e8e8e8;
-  opacity: 0.48;
 }
 
 .subscription__item-cost .subscription__price::after {
@@ -1521,7 +1526,7 @@ ul {
   }
 
   .gym__inner {
-    padding: 65px 0 63px;
+    padding: 65px 0 187px;
   }
 
   .gym__img-container {
@@ -1609,6 +1614,77 @@ ul {
   .gym__text p {
     width: 90%;
     margin: 0;
+  }
+
+  .subscription::after {
+    background-image: none;
+  }
+
+  .subscription__inner {
+    padding: 41px 0 19px;
+  }
+
+  .subscription__inner h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .subscription__item-month {
+    font-size: 16px;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+
+  .subscription__item-month-current::before {
+    width: 113%;
+  }
+
+  .subscription__list-cost {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .subscription__cost-wrapper::before {
+    top: -45px;
+    left: 43px;
+    font-size: 80px;
+    line-height: 150%;
+    opacity: 0.48;
+    margin-left: calc(39% - 114px);
+  }
+
+  .subscription__item-cost {
+    width: 100%;
+    padding: 48px 0 74px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 37px;
+  }
+
+  .subscription__item-cost h3 {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .subscription__item-cost .subscription__price {
+    font-size: 48px;
+    line-height: 150%;
+    margin-right: 33px;
+    margin-top: 56px;
+    margin-bottom: 50px;
+  }
+
+  .subscription__item-cost .subscription__price::after {
+    width: 24px;
+    height: 33px;
+    content: url("../img/svg/rub-tablet.svg");
+    right: 43px;
+    bottom: 39px;
+  }
+
+  .subscription__item-cost-current {
+    padding-top: 46px;
+    padding-bottom: 68px;
   }
 }
 
