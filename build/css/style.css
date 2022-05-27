@@ -1411,6 +1411,37 @@ ul {
   .gym__text .gym__text-desktop {
     display: none;
   }
+
+  .subscription::after {
+    background-image: url("../img/disks-tablet.png");
+    width: 348px;
+    right: 1px;
+    bottom: -95px;
+  }
+
+  .subscription__inner {
+    padding-top: 60px;
+    padding-bottom: 43px;
+  }
+
+  .subscription__inner h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .subscription__item-month {
+    font-size: 18px;
+    margin: 0px 27px 10px;
+  }
+
+  .subscription__item-cost {
+    padding: 64px 116px 96px;
+    margin-bottom: 33px;
+  }
+
+  .subscription__item-cost-current {
+    padding: 49px 112px 87px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
