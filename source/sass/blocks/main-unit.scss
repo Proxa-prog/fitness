@@ -43,6 +43,7 @@
   a {
     color: $color-default-white;
     margin: 0 20px;
+    user-select: none;
   }
 
   p {
@@ -114,6 +115,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.05em;
+    user-select: none;
   }
 
   .main-unit__text-no-desktop-list {
@@ -198,6 +200,8 @@
 }
 
 .main-unit__item {
+  cursor: pointer;
+
   margin-bottom: 18px;
 
   p {

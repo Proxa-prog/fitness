@@ -843,6 +843,7 @@ ul {
 .main-unit__header a {
   color: #ffffff;
   margin: 0 20px;
+  -webkit-user-select: none;
 }
 
 .main-unit__header p {
@@ -902,6 +903,10 @@ ul {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main-unit__text-block .main-unit__text-no-desktop-list {
@@ -925,6 +930,7 @@ ul {
 }
 
 .main-unit__item {
+  cursor: pointer;
   margin-bottom: 18px;
 }
 
@@ -943,7 +949,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 121px 71px 120px 103px;
+  padding: 121px 71px 234px 103px;
 }
 
 .gym__img-container {
@@ -990,6 +996,10 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.gym__video-container {
+  cursor: pointer;
 }
 
 .gym__video-container img {
@@ -1049,6 +1059,213 @@ ul {
   color: #102654;
   margin-bottom: 40px;
   margin-top: 10px;
+}
+
+.subscription {
+  position: relative;
+  background-color: #f8f9fc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.subscription::after {
+  position: absolute;
+  z-index: 0;
+  content: "";
+  width: 283px;
+  height: 417px;
+  background-image: url("../img/disks-desktop.png");
+  background-repeat: no-repeat;
+  right: 1px;
+  bottom: -77px;
+}
+
+.subscription__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  padding: 75px 44px 78px;
+}
+
+.subscription__inner h2 {
+  width: 100%;
+  font-family: 'Bebas Neue';
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+}
+
+.subscription__list-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  margin-bottom: 20px;
+}
+
+.subscription__item-month {
+  font-size: 20px;
+  line-height: 150%;
+  color: rgba(16, 38, 84, 0.5);
+  margin: 0 23px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.subscription__item-month:nth-child(1) {
+  margin-left: 0;
+}
+
+.subscription__item-month:nth-last-of-type(1) {
+  margin-right: 0;
+}
+
+.subscription__item-month-current {
+  position: relative;
+  color: #102654;
+}
+
+.subscription__item-month-current::before {
+  position: absolute;
+  bottom: -11px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #d10a42;
+}
+
+.subscription__list-cost {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 19px 3px;
+}
+
+.subscription__cost-wrapper {
+  position: relative;
+}
+
+.subscription__cost-wrapper::before {
+  position: absolute;
+  z-index: -1;
+  top: -51px;
+  left: 0;
+  content: attr(data-price);
+  width: 203px;
+  height: 69px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 150%;
+  color: #e8e8e8;
+  opacity: 0.48;
+}
+
+.subscription__item-cost {
+  background-color: #ffffff;
+  z-index: 1;
+  color: #102654;
+  padding: 57px 76px 88px;
+  margin: 0 21px 20px;
+  position: relative;
+}
+
+.subscription__item-cost h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.subscription__item-cost p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #495a7d;
+  margin-top: 6px;
+}
+
+.subscription__item-cost .subscription__price {
+  position: relative;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 150%;
+  color: #103aae;
+  margin-top: 63px;
+  margin-right: 50px;
+  margin-bottom: 53px;
+}
+
+.subscription__item-cost .subscription__price::after {
+  position: absolute;
+  content: url("../img/svg/rub.svg");
+  width: 30px;
+  height: 42px;
+  right: -28px;
+}
+
+.subscription__item-cost a {
+  position: relative;
+  width: 206px;
+  min-height: 64px;
+  padding: 23px 44px;
+  border: 2px solid #102654;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.subscription__item-cost:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  -o-border-image: -o-linear-gradient(left top, #d10a43 0%, #02359e 100%);
+  border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a43), to(#02359e));
+  border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
+  border-width: 7px;
+  border-style: solid;
+  border-image-slice: 1;
+  top: 0;
+  left: 0;
+}
+
+.subscription__item-cost:hover a {
+  color: #ffffff;
+  padding: 23px 46px;
+  border: none;
+  background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+}
+
+.subscription__list-cost-six-month {
+  display: none;
+}
+
+.subscription__list-cost-twelve-month {
+  display: none;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1223,6 +1440,33 @@ ul {
   .gym__text .gym__text-desktop {
     display: none;
   }
+
+  .subscription::after {
+    background-image: url("../img/disks-tablet.png");
+    width: 348px;
+    right: 1px;
+    bottom: -95px;
+  }
+
+  .subscription__inner {
+    padding-top: 60px;
+    padding-bottom: 43px;
+  }
+
+  .subscription__inner h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .subscription__item-month {
+    font-size: 18px;
+    margin: 0px 27px 10px;
+  }
+
+  .subscription__item-cost {
+    padding: 64px 116px 96px;
+    margin-bottom: 33px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -1302,7 +1546,7 @@ ul {
   }
 
   .gym__inner {
-    padding: 65px 0 63px;
+    padding: 65px 0 187px;
   }
 
   .gym__img-container {
@@ -1390,6 +1634,72 @@ ul {
   .gym__text p {
     width: 90%;
     margin: 0;
+  }
+
+  .subscription::after {
+    background-image: none;
+  }
+
+  .subscription__inner {
+    padding: 41px 0 19px;
+  }
+
+  .subscription__inner h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .subscription__item-month {
+    font-size: 16px;
+    margin-left: 22px;
+    margin-right: 22px;
+  }
+
+  .subscription__item-month-current::before {
+    width: 113%;
+  }
+
+  .subscription__list-cost {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .subscription__cost-wrapper::before {
+    top: -45px;
+    left: 43px;
+    font-size: 80px;
+    line-height: 150%;
+    opacity: 0.48;
+    margin-left: calc(39% - 114px);
+  }
+
+  .subscription__item-cost {
+    width: 100%;
+    padding: 48px 0 74px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 37px;
+  }
+
+  .subscription__item-cost h3 {
+    font-size: 22px;
+    line-height: 110.16%;
+  }
+
+  .subscription__item-cost .subscription__price {
+    font-size: 48px;
+    line-height: 150%;
+    margin-right: 33px;
+    margin-top: 56px;
+    margin-bottom: 50px;
+  }
+
+  .subscription__item-cost .subscription__price::after {
+    width: 24px;
+    height: 33px;
+    content: url("../img/svg/rub-tablet.svg");
+    right: 43px;
+    bottom: 39px;
   }
 }
 
