@@ -843,6 +843,7 @@ ul {
 .main-unit__header a {
   color: #ffffff;
   margin: 0 20px;
+  -webkit-user-select: none;
 }
 
 .main-unit__header p {
@@ -902,6 +903,10 @@ ul {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .main-unit__text-block .main-unit__text-no-desktop-list {
@@ -925,6 +930,7 @@ ul {
 }
 
 .main-unit__item {
+  cursor: pointer;
   margin-bottom: 18px;
 }
 
@@ -992,6 +998,10 @@ ul {
   background-position: center;
 }
 
+.gym__video-container {
+  cursor: pointer;
+}
+
 .gym__video-container img {
   position: absolute;
   width: 364px;
@@ -1054,6 +1064,10 @@ ul {
 .subscription {
   position: relative;
   background-color: #f8f9fc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .subscription::after {
@@ -1109,6 +1123,7 @@ ul {
   color: rgba(16, 38, 84, 0.5);
   margin: 0 23px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .subscription__item-month:nth-child(1) {
@@ -1171,6 +1186,7 @@ ul {
   color: #102654;
   padding: 57px 76px 88px;
   margin: 0 21px 20px;
+  position: relative;
 }
 
 .subscription__item-cost h3 {
@@ -1207,6 +1223,7 @@ ul {
 }
 
 .subscription__item-cost a {
+  position: relative;
   width: 206px;
   min-height: 64px;
   padding: 23px 44px;
@@ -1216,21 +1233,28 @@ ul {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
+  cursor: pointer;
+  z-index: 2;
 }
 
-.subscription__item-cost-current {
-  padding: 50px 70px;
+.subscription__item-cost:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
   -o-border-image: -o-linear-gradient(left top, #d10a43 0%, #02359e 100%);
   border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a43), to(#02359e));
   border-image: linear-gradient(to right bottom, #d10a43 0%, #02359e 100%);
   border-width: 7px;
   border-style: solid;
   border-image-slice: 1;
+  top: 0;
+  left: 0;
 }
 
-.subscription__item-cost-current a {
+.subscription__item-cost:hover a {
   color: #ffffff;
-  padding: 24px 45px;
+  padding: 23px 46px;
   border: none;
   background: -o-linear-gradient(352.95deg, #ED0233 17.6%, #003EB7 95.31%);
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
@@ -1442,10 +1466,6 @@ ul {
   .subscription__item-cost {
     padding: 64px 116px 96px;
     margin-bottom: 33px;
-  }
-
-  .subscription__item-cost-current {
-    padding: 49px 112px 87px;
   }
 }
 
@@ -1680,11 +1700,6 @@ ul {
     content: url("../img/svg/rub-tablet.svg");
     right: 43px;
     bottom: 39px;
-  }
-
-  .subscription__item-cost-current {
-    padding-top: 46px;
-    padding-bottom: 68px;
   }
 }
 

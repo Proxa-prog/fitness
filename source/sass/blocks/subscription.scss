@@ -1,6 +1,7 @@
 .subscription {
   position: relative;
   background-color: $color-ghost-white;
+  user-select: none;
 
   &::after {
     position: absolute;
@@ -15,7 +16,7 @@
   }
 
   @include vp-1023 {
-    &::after{
+    &::after {
       background-image: url("../img/disks-tablet.png");
       width: 348px;
       right: 1px;
@@ -39,7 +40,7 @@
 
   h2 {
     width: 100%;
-    font-family: 'Bebas Neue';
+    font-family: "Bebas Neue", sans-serif;
     font-size: 49px;
     line-height: 49px;
     letter-spacing: 0.03em;
@@ -80,6 +81,7 @@
   color: rgba(16, 38, 84, 0.5);
   margin: 0 23px;
   margin-bottom: 10px;
+  cursor: pointer;
 
   &:nth-child(1) {
     margin-left: 0;
@@ -91,7 +93,7 @@
 
   @include vp-1023 {
     font-size: 18px;
-    margin: 0px 27px 10px;
+    margin: 0 27px 10px;
   }
 
   @include vp-767 {
@@ -170,6 +172,7 @@
   color: $color-sapphire;
   padding: 57px 76px 88px;
   margin: 0 21px 20px;
+  position: relative;
 
   h3 {
     font-weight: 700;
@@ -205,6 +208,7 @@
   }
 
   a {
+    position: relative;
     width: 206px;
     min-height: 64px;
     padding: 23px 44px;
@@ -214,6 +218,30 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.05em;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-image: linear-gradient(to right bottom, $color-crimson 0%, $color-smalt 100%);
+      border-width: 7px;
+      border-style: solid;
+      border-image-slice: 1;
+      top: 0;
+      left: 0;
+    }
+
+    a {
+      color: $color-default-white;
+      padding: 23px 46px;
+      border: none;
+      background: linear-gradient(97.05deg, $color-torch-red 17.6%, $color-cobalt 95.31%);
+    }
   }
 
   @include vp-1023 {
@@ -248,31 +276,11 @@
         bottom: 39px;
       }
     }
-  }
-}
 
-.subscription__item-cost-current {
-  padding: 50px 70px;
-  border-image: linear-gradient(to right bottom,#d10a43 0%,#02359e 100%);
-  border-width: 7px;
-  border-style: solid;
-  border-image-slice: 1;
-
-  a {
-    color: $color-default-white;
-    padding: 24px 45px;
-    border: none;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-  }
-
-  @include vp-1023 {
-    padding: 49px 112px 87px;
-  }
-
-  @include vp-767 {
-    padding-top: 46px;
-    padding-bottom: 68px;
-
+    &:hover {
+      // padding-top: 46px;
+      // padding-bottom: 68px;
+    }
   }
 }
 
@@ -283,5 +291,3 @@
 .subscription__list-cost-twelve-month {
   display: none;
 }
-
-
