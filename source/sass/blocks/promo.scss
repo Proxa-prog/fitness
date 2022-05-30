@@ -1,0 +1,226 @@
+.promo__inner {
+  padding: 124px 71px;
+  display: flex;
+
+  @include vp-1279 {
+    padding: 104px 21px;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    padding: 66px 0;
+  }
+}
+
+.promo__text {
+  width: 43%;
+  background-color: $color-torch-red-1;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 77px 74px 86px 78px;
+
+  h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 90px;
+    line-height: 90px;
+    letter-spacing: 0.03em;
+    color: $color-default-white;
+    text-transform: uppercase;
+    width: 201px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-default-white;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 45px;
+  }
+
+  a {
+    width: 343px;
+    padding: 24px 28px;
+    border: 4px solid $color-default-white;
+    background-color: inherit;
+    color: $color-default-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .promo__annual-competition {
+    width: 100%;
+  }
+
+  @include vp-1279 {
+    padding: 47px 44px 48px 45px;
+    width: 292px;
+    margin-left: auto;
+
+    h3 {
+      font-size: 52px;
+      line-height: 52px;
+      width: 127px;
+    }
+
+    .promo__annual-competition {
+      font-size: 12px;
+      margin: 0 0 29px;
+    }
+
+    a {
+      font-size: 10px;
+      line-height: 12px;
+      padding: 11px 28px;
+    }
+  }
+
+  @include vp-767 {
+    width: 289px;
+    padding: 49px 44px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.promo__date-block {
+  width: 99%;
+}
+
+.promo__date-wrapper {
+  color: $color-default-white;
+  margin-left: auto;
+  margin-bottom: 1px;
+
+  p {
+    font-size: 18px;
+    line-height: 150%;
+    margin: 0;
+  }
+
+  p span {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+  }
+
+  .promo__exact-date {
+    position: relative;
+    font-size: 14px;
+    margin-left: 25px;
+
+    &::before {
+      content: "7";
+      position: absolute;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 150%;
+      left: -25px;
+      top: -12px;
+    }
+  }
+
+  .promo__exact-title {
+    border-bottom: 1px solid $color-default-white;
+    margin-right: 28px;
+    margin-bottom: 5px;
+    padding: 0 0 5px;
+  }
+
+  @include vp-1279 {
+    p {
+      font-size: 12px;
+    }
+
+    p span {
+      font-size: 24px;
+    }
+
+    .promo__exact-date {
+      font-size: 10px;
+      margin-left: 28px;
+      margin-right: 0;
+      width: 36px;
+
+      &::before {
+        font-size: 24px;
+        left: -16px;
+        top: -4px;
+      }
+    }
+
+    .promo__exact-title {
+      font-size: 12px;
+      margin-left: 9px;
+      margin-bottom: 0;
+      padding: 0 0 1px;
+    }
+  }
+}
+
+.promo__time {
+  padding-top: 15px;
+
+  @include vp-1279 {
+    padding-top: 2px;
+    padding-left: 11px;
+  }
+}
+
+.promo__exact-time {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 96%;
+    height: 1px;
+    background-color: $color-default-white;
+    left: -1px;
+    top: 4px;
+  }
+
+  @include vp-1279 {
+    &::before {
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.promo__img {
+  width: 57%;
+  height: auto;
+  background-image: url("../img/man-in-magnezia-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @include retina {
+    background-image: url("../img/man-in-magnezia-desktop@2x.jpg");
+  }
+
+  @include vp-1279 {
+    width: 386px;
+    margin-right: auto;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 292px;
+    margin: 0 auto;
+    background-image: url("../img/man-in-magnezia-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/man-in-magnezia-mobile@2x.jpg");
+    }
+  }
+}
