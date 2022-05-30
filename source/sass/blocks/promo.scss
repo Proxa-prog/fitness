@@ -5,6 +5,14 @@
   @include vp-1279 {
     padding: 104px 21px;
   }
+
+  @include vp-767 {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+    padding: 66px 0;
+  }
 }
 
 .promo__text {
@@ -15,7 +23,7 @@
   padding: 77px 74px 86px 78px;
 
   h3 {
-    font-family: 'Bebas Neue';
+    font-family: "Bebas Neue", sans-serif;
     font-size: 90px;
     line-height: 90px;
     letter-spacing: 0.03em;
@@ -49,6 +57,10 @@
     text-align: center;
   }
 
+  .promo__annual-competition {
+    width: 100%;
+  }
+
   @include vp-1279 {
     padding: 47px 44px 48px 45px;
     width: 292px;
@@ -63,7 +75,6 @@
     .promo__annual-competition {
       font-size: 12px;
       margin: 0 0 29px;
-      width: 100%;
     }
 
     a {
@@ -71,6 +82,13 @@
       line-height: 12px;
       padding: 11px 28px;
     }
+  }
+
+  @include vp-767 {
+    width: 289px;
+    padding: 49px 44px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -92,7 +110,7 @@
   p span {
     font-weight: 700;
     font-size: 40px;
-    line-height: 150%
+    line-height: 150%;
   }
 
   .promo__exact-date {
@@ -130,7 +148,7 @@
     .promo__exact-date {
       font-size: 10px;
       margin-left: 28px;
-      margin-right: 0px;
+      margin-right: 0;
       width: 36px;
 
       &::before {
@@ -173,8 +191,8 @@
 
   @include vp-1279 {
     &::before {
-      left: 0px;
-      top: 0px;
+      left: 0;
+      top: 0;
     }
   }
 }
@@ -193,5 +211,16 @@
   @include vp-1279 {
     width: 386px;
     margin-right: auto;
+  }
+
+  @include vp-767 {
+    width: 290px;
+    height: 292px;
+    margin: 0 auto;
+    background-image: url("../img/man-in-magnezia-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/man-in-magnezia-mobile@2x.jpg");
+    }
   }
 }

@@ -1324,6 +1324,10 @@ ul {
   text-align: center;
 }
 
+.promo__text .promo__annual-competition {
+  width: 100%;
+}
+
 .promo__date-block {
   width: 99%;
 }
@@ -1435,7 +1439,6 @@ ul {
   .promo__text .promo__annual-competition {
     font-size: 12px;
     margin: 0 0 29px;
-    width: 100%;
   }
 
   .promo__text a {
@@ -1875,7 +1878,7 @@ ul {
 
   .subscription__item-cost {
     width: 100%;
-    padding: 48px 0 74px;
+    padding: 50px 0 74px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 37px;
@@ -1901,11 +1904,38 @@ ul {
     right: 43px;
     bottom: 39px;
   }
+
+  .promo__inner {
+    width: 290px;
+    margin-right: auto;
+    margin-left: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 66px 0;
+  }
+
+  .promo__text {
+    width: 289px;
+    padding: 49px 44px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .promo__img {
+    width: 290px;
+    height: 292px;
+    margin: 0 auto;
+    background-image: url("../img/man-in-magnezia-mobile.jpg");
+  }
 }
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .gym__img-foto {
     background-image: url("../img/gym-mobile@2x.jpg");
+  }
+
+  .promo__img {
+    background-image: url("../img/man-in-magnezia-mobile@2x.jpg");
   }
 }
 
