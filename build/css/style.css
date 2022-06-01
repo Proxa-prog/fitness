@@ -1322,6 +1322,10 @@ ul {
   line-height: 14px;
   letter-spacing: 0.05em;
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .promo__text .promo__annual-competition {
@@ -1437,7 +1441,6 @@ ul {
   top: 132px;
   border: none;
   background-color: inherit;
-  background-image: url("../img/svg/arrow-left.svg");
   cursor: pointer;
 }
 
@@ -1450,7 +1453,6 @@ ul {
   top: 132px;
   border: none;
   background-color: inherit;
-  background-image: url("../img/svg/arrow-right.svg");
   cursor: pointer;
 }
 
@@ -2111,6 +2113,69 @@ ul {
     height: 292px;
     margin: 0 auto;
     background-image: url("../img/man-in-magnezia-mobile.jpg");
+  }
+
+  .treners {
+    padding: 1px 15px 71px;
+  }
+
+  .treners h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .treners__list {
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+
+  .treners__list .treners__item-maria-ketova {
+    display: none;
+  }
+
+  .treners__slider-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .treners__button-back {
+    position: static;
+    margin-left: auto;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    padding: 0;
+  }
+
+  .treners__button-back svg {
+    width: 10px;
+    height: 19px;
+  }
+
+  .treners__button-forward {
+    position: static;
+    margin-right: auto;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    padding: 0;
+  }
+
+  .treners__button-forward svg {
+    width: 10px;
+    height: 19px;
+  }
+
+  .treners__item {
+    width: 226px;
+    height: 274px;
+  }
+
+  .treners__info-wrapper:hover {
+    padding-top: 43px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
