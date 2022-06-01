@@ -11,12 +11,34 @@
     margin-left: 22px;
     margin-bottom: 55px;
   }
+
+  @include vp-1279 {
+    padding: 0 80px 97px;
+    text-align: center;
+
+    h3 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-left: 0;
+      margin-bottom: 44px;
+    }
+  }
 }
 
 .treners__list {
   display: flex;
   justify-content: center;
   position: relative;
+
+  @include vp-1279 {
+    .treners__item-anna-pavlova {
+      display: none;
+    }
+
+    .treners__item-aleksey-lavrov {
+      display: none;
+    }
+  }
 }
 
 .treners__slider-wrapper {
@@ -25,24 +47,28 @@
 
 .treners__button-back {
   position: absolute;
-  width: 16px;
+  z-index: 1000;
+  width: 18px;
   height: 32px;
   left: -36px;
   top: 132px;
   border: none;
   background-color: inherit;
   background-image: url("../img/svg/arrow-left.svg");
+  cursor: pointer;
 }
 
 .treners__button-forward {
   position: absolute;
-  width: 16px;
+  z-index: 1000;
+  width: 18px;
   height: 32px;
   right: -36px;
   top: 132px;
   border: none;
   background-color: inherit;
   background-image: url("../img/svg/arrow-right.svg");
+  cursor: pointer;
 }
 
 .treners__item {
@@ -56,6 +82,15 @@
     font-size: 18px;
     line-height: 150%;
     color: $color-default-white;
+  }
+
+  @include vp-1279 {
+     width: 268px;
+
+     img {
+       width: 100%;
+       height: 100%;
+     }
   }
 }
 
@@ -129,7 +164,7 @@
     }
 
     p {
-      opacity: 0;
+      opacity: 1;
     }
   }
 }
