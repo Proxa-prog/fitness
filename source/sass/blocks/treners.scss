@@ -1,0 +1,228 @@
+.treners {
+  padding: 60px 83px;
+
+  h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: $color-sapphire;
+    margin-top: 0;
+    margin-left: 22px;
+    margin-bottom: 55px;
+  }
+
+  @include vp-1279 {
+    padding: 0 80px 97px;
+    text-align: center;
+
+    h3 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-left: 0;
+      margin-bottom: 44px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 1px 15px 71px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}
+
+.treners__list {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  @include vp-1279 {
+    .treners__item-anna-pavlova {
+      display: none;
+    }
+
+    .treners__item-aleksey-lavrov {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    margin-left: 14px;
+    margin-right: 14px;
+
+    .treners__item-maria-ketova {
+      display: none;
+    }
+  }
+}
+
+.treners__slider-wrapper {
+  position: relative;
+
+  @include vp-767 {
+    display: flex;
+  }
+}
+
+.treners__button-back {
+  position: absolute;
+  z-index: 1000;
+  width: 18px;
+  height: 32px;
+  left: -36px;
+  top: 132px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  @include vp-767 {
+    position: static;
+    margin-left: auto;
+    align-self: center;
+    padding: 0;
+
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+
+.treners__button-forward {
+  position: absolute;
+  z-index: 1000;
+  width: 18px;
+  height: 32px;
+  right: -36px;
+  top: 132px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  @include vp-767 {
+    position: static;
+    margin-right: auto;
+    align-self: center;
+    padding: 0;
+
+    svg {
+      width: 10px;
+      height: 19px;
+    }
+  }
+}
+
+.treners__item {
+  width: 260px;
+  height: 294px;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+
+  h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-default-white;
+  }
+
+  @include vp-1279 {
+    width: 268px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.treners__list-info {
+  padding-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.treners__list-item {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 13px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $color-default-white;
+    left: -16px;
+    top: 7px;
+  }
+}
+
+.treners__info-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: $color-default-white;
+  padding: 70px 41px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    margin: 0;
+    order: 100;
+  }
+
+  p {
+    opacity: 0;
+    margin: 0 0 28px;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-spindle;
+  }
+
+  ul {
+    opacity: 0;
+  }
+
+  &:hover {
+    padding-top: 53px;
+    background: rgba(16, 38, 84, 0.89);
+
+    h4 {
+      order: 0;
+    }
+
+    ul {
+      opacity: 1;
+    }
+
+    p {
+      opacity: 1;
+    }
+  }
+
+  @include vp-767 {
+    &:hover {
+      padding-top: 43px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
