@@ -2,6 +2,12 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import playVideo from './modules/play-video';
 import changeSelection from './modules/subscription-carousel';
+import slider from './modules/treners-carousel';
+import {buttonClickPrevious, buttonClickForvard} from './modules/button-click';
+const buttonBack = document.querySelector('.treners__button-back');
+const buttonForward = document.querySelector('.treners__button-forward');
+const slides = document.querySelectorAll('.treners__item');
+let slideIndex = 0;
 
 // ---------------------------------
 
@@ -17,7 +23,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
   playVideo();
   changeSelection('subscription__item-month-current', 'subscription__item-month');
-
+  slider(slideIndex, false);
+  buttonClickPrevious(buttonBack, slideIndex, slides, slider);
+  buttonClickForvard(buttonForward, slideIndex, slides, slider);
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
