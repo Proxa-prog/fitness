@@ -1272,7 +1272,7 @@ ul {
 }
 
 .promo__inner {
-  padding: 124px 71px;
+  padding: 124px 71px 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1290,7 +1290,7 @@ ul {
 }
 
 .promo__text h3 {
-  font-family: 'Bebas Neue';
+  font-family: "Bebas Neue", sans-serif;
   font-size: 90px;
   line-height: 90px;
   letter-spacing: 0.03em;
@@ -1399,6 +1399,158 @@ ul {
   background-position: center;
 }
 
+.treners {
+  padding: 60px 83px;
+}
+
+.treners h3 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: #102654;
+  margin-top: 0;
+  margin-left: 22px;
+  margin-bottom: 55px;
+}
+
+.treners__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.treners__slider-wrapper {
+  position: relative;
+}
+
+.treners__button-back {
+  position: absolute;
+  width: 16px;
+  height: 32px;
+  left: -36px;
+  top: 132px;
+  border: none;
+  background-color: inherit;
+  background-image: url("../img/svg/arrow-left.svg");
+}
+
+.treners__button-forward {
+  position: absolute;
+  width: 16px;
+  height: 32px;
+  right: -36px;
+  top: 132px;
+  border: none;
+  background-color: inherit;
+  background-image: url("../img/svg/arrow-right.svg");
+}
+
+.treners__item {
+  width: 260px;
+  height: 294px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.treners__item h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.treners__list-info {
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.treners__list-item {
+  position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 13px;
+}
+
+.treners__list-item::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  left: -16px;
+  top: 7px;
+}
+
+.treners__info-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 70px 41px 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.treners__info-wrapper h4 {
+  margin: 0;
+  -webkit-box-ordinal-group: 101;
+  -ms-flex-order: 100;
+  order: 100;
+}
+
+.treners__info-wrapper p {
+  opacity: 0;
+  margin: 0 0 28px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #b6bdcc;
+}
+
+.treners__info-wrapper ul {
+  opacity: 0;
+}
+
+.treners__info-wrapper:hover {
+  padding-top: 53px;
+  background: rgba(16, 38, 84, 0.89);
+}
+
+.treners__info-wrapper:hover h4 {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.treners__info-wrapper:hover ul {
+  opacity: 1;
+}
+
+.treners__info-wrapper:hover p {
+  opacity: 0;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1458,7 +1610,7 @@ ul {
   .promo__date-wrapper .promo__exact-date {
     font-size: 10px;
     margin-left: 28px;
-    margin-right: 0px;
+    margin-right: 0;
     width: 36px;
   }
 
@@ -1481,8 +1633,8 @@ ul {
   }
 
   .promo__exact-time::before {
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
   }
 
   .promo__img {
