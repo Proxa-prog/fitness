@@ -1565,7 +1565,7 @@ ul {
 }
 
 .advantages h3 {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -1701,7 +1701,7 @@ ul {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   padding: 36px 34px;
-  background: #1C3374;
+  background: #1c3374;
   width: 240px;
   color: #ffffff;
 }
@@ -2449,8 +2449,6 @@ ul {
   }
 
   .advantages__square h4::before {
-    top: 11px;
-    left: 25px;
     background-image: url("../img/900-mobile.png");
     top: 22px;
     left: 69px;
@@ -2461,24 +2459,18 @@ ul {
   }
 
   .advantages__comfort h4::before {
-    top: 11px;
-    left: 25px;
     background-image: url("../img/350-mobile.png");
     top: 48px;
     left: 69px;
   }
 
   .advantages__expirience h4::before {
-    top: 11px;
-    left: 25px;
     background-image: url("../img/5-mobile.png");
     top: 22px;
     left: 86px;
   }
 
   .advantages__park h4::before {
-    top: 11px;
-    left: 25px;
     background-image: url("../img/70-mobile.png");
     top: 22px;
     left: 84px;
