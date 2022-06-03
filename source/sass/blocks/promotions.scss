@@ -1,0 +1,123 @@
+.promotions__inner {
+  padding: 96px 83px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+
+  h3 {
+    width: 100%;
+    margin-bottom: 55px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 49px;
+    line-height: 49px;
+    letter-spacing: 0.03em;
+    color: $color-sapphire;
+  }
+}
+
+.promotions__content-wrapper {
+  display: flex;
+}
+
+.promotions__first-block {
+  display: flex;
+  margin: 0 20px;
+}
+
+.promotions__first-block-cost {
+  background-color: $color-torch-red-1;
+  color: $color-default-white;
+  text-align: left;
+  padding: 7px 45px 43px;
+  width: 280px;
+  min-height: 462px;
+  align-self: flex-start;
+
+  .promotions__first-block-one-year {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 156%;
+    margin-bottom: 16px;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 70px;
+  }
+
+  .promotions__first-block-no-limit {
+    font-size: 18px;
+    line-height: 140%;
+    margin-top: 23px;
+    margin-bottom: 184px;
+  }
+
+  a {
+    color: $color-default-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid $color-default-white;
+  }
+}
+
+.promotions__first-block-img {
+  width: 280px;
+  height: 100%;
+  background-image: url("../img/girl-on-blue-desktop.jpg");
+  background-repeat: no-repeat;
+
+  @include retina {
+    background-image: url("../img/girl-on-blue-desktop@2x.jpg");
+  }
+}
+
+.promotions__second-block {
+  margin: 0 20px;
+  width: 46.6%;
+}
+
+.promotions__second-block-item {
+  width: 100%;
+  min-height: 211px;
+  border-image: linear-gradient(to right bottom,#d10a42 0%,#02359e 100%);
+  border-width: 7px;
+  border-style: solid;
+  border-image-slice: 1;
+  padding: 37px 27px 27px;
+  text-align: left;
+  color: $color-resolution-blue;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  h4 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0;
+  }
+
+  p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 0;
+  }
+
+  a {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-resolution-blue;;
+    color: $color-resolution-blue;
+    margin: auto 0 0;
+  }
+}
