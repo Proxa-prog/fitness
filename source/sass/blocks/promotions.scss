@@ -13,15 +13,50 @@
     letter-spacing: 0.03em;
     color: $color-sapphire;
   }
+
+  @include vp-1279 {
+    padding: 66px 45px;
+
+    h3 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 46px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 78px 15px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
 }
 
 .promotions__content-wrapper {
+  margin: 0 auto;
   display: flex;
+
+  @include vp-1279 {
+    flex-wrap: wrap;
+  }
 }
 
 .promotions__first-block {
   display: flex;
   margin: 0 20px;
+
+  @include vp-1279 {
+    margin: 0 auto 30px;
+  }
+
+  @include vp-767 {
+    flex-wrap: wrap;
+    text-align: center;
+    width: 290px;
+    margin-bottom: 331px;
+  }
 }
 
 .promotions__first-block-cost {
@@ -61,28 +96,66 @@
     letter-spacing: 0.05em;
     border-bottom: 1px solid $color-default-white;
   }
+
+  @include vp-767 {
+    min-height: 220px;
+    padding-bottom: 42px;
+    width: 290px;
+    text-align: center;
+    align-self: auto;
+
+    .promotions__first-block-no-limit {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .promotions__first-block-img {
   width: 280px;
   height: 100%;
-  background-image: url("../img/girl-on-blue-desktop.jpg");
   background-repeat: no-repeat;
+  background-image: url("../img/girl-on-blue-desktop.jpg");
 
   @include retina {
     background-image: url("../img/girl-on-blue-desktop@2x.jpg");
+  }
+
+  @include vp-1279 {
+    width: 399px;
+    background-image: url("../img/girl-on-blue-tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/girl-on-blue-tablet@2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    width: 290px;
+    background-image: url("../img/girl-on-blue-mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/girl-on-blue-mobile@2x.jpg");
+    }
   }
 }
 
 .promotions__second-block {
   margin: 0 20px;
   width: 46.6%;
+
+  @include vp-1279 {
+    width: 100%;
+    margin: 0 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .promotions__second-block-item {
   width: 100%;
   min-height: 211px;
-  border-image: linear-gradient(to right bottom,#d10a42 0%,#02359e 100%);
+  border-image: linear-gradient(to right bottom, #d10a42 0%, #02359e 100%);
   border-width: 7px;
   border-style: solid;
   border-image-slice: 1;
@@ -116,8 +189,41 @@
     line-height: 14px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    border-bottom: 1px solid $color-resolution-blue;;
+    border-bottom: 1px solid $color-resolution-blue;
     color: $color-resolution-blue;
     margin: auto 0 0;
+  }
+
+  br {
+    display: none;
+  }
+
+  @include vp-1279 {
+    width: 48%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 47px 25px 40px 25px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    a {
+      margin: auto auto 0;
+    }
+
+    p {
+      margin-top: 16px;
+    }
+
+    br {
+      display: inline;
+    }
+  }
+}
+
+.promotions__second-block-month {
+  @include vp-1279 {
+    padding: 37px 58px 27px 27px;
   }
 }
