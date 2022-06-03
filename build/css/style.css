@@ -1597,9 +1597,15 @@ ul {
   margin-top: 0;
 }
 
+.advantages__block p br {
+  display: none;
+}
+
 .advantages__square {
   padding-left: 164px;
   position: relative;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  padding-bottom: 59px;
 }
 
 .advantages__square h4::before {
@@ -1646,6 +1652,8 @@ ul {
 
 .advantages__park {
   position: relative;
+  border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  padding-bottom: 59px;
 }
 
 .advantages__park h4::before {
@@ -1672,7 +1680,7 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 118px;
+  margin-bottom: 56px;
 }
 
 .advantages__bottom-block {
@@ -1830,6 +1838,86 @@ ul {
   .treners__item img {
     width: 100%;
     height: 100%;
+  }
+
+  .advantages {
+    padding-top: 57px;
+  }
+
+  .advantages h3 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .advantages h4 {
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .advantages__block h4 {
+    margin-bottom: 0;
+  }
+
+  .advantages__square {
+    padding-left: 113px;
+    border-bottom: none;
+  }
+
+  .advantages__square h4::before {
+    background-image: url("../img/900-tablet.png");
+    left: -5px;
+    top: 11px;
+  }
+
+  .advantages__comfort {
+    padding-left: 113px;
+  }
+
+  .advantages__comfort h4::before {
+    background-image: url("../img/350-tablet.png");
+    left: -5px;
+    top: 15px;
+  }
+
+  .advantages__expirience h4::before {
+    background-image: url("../img/5-tablet.png");
+    left: 24px;
+    top: 15px;
+  }
+
+  .advantages__park {
+    border-bottom: none;
+  }
+
+  .advantages__park h4::before {
+    top: 11px;
+    left: 25px;
+    background-image: url("../img/70-tablet.png");
+  }
+
+  .advantages__top-block {
+    margin-bottom: 240px;
+  }
+
+  .advantages__middle-block {
+    top: 57%;
+    padding: 14px 55px 37px;
+    width: 442px;
+  }
+
+  .advantages__middle-block .advantages__middle-block-number {
+    padding: 46px 0 18px;
+  }
+
+  .advantages__middle-block .advantages__middle-block-title {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .advantages__middle-block .advantages__middle-block-text {
+    width: 172px;
+    margin: 20px auto 0;
   }
 }
 
@@ -2331,6 +2419,106 @@ ul {
     padding-top: 43px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .advantages {
+    padding: 0;
+    padding-top: 34px;
+  }
+
+  .advantages h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .advantages__block {
+    text-align: center;
+    padding: 92px 0 6px;
+    margin: 0 auto;
+    width: 227px;
+  }
+
+  .advantages__block p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  .advantages__block p br {
+    display: inline;
+  }
+
+  .advantages__square h4::before {
+    top: 11px;
+    left: 25px;
+    background-image: url("../img/900-mobile.png");
+    top: 22px;
+    left: 69px;
+  }
+
+  .advantages__comfort {
+    padding: 117px 0 6px;
+  }
+
+  .advantages__comfort h4::before {
+    top: 11px;
+    left: 25px;
+    background-image: url("../img/350-mobile.png");
+    top: 48px;
+    left: 69px;
+  }
+
+  .advantages__expirience h4::before {
+    top: 11px;
+    left: 25px;
+    background-image: url("../img/5-mobile.png");
+    top: 22px;
+    left: 86px;
+  }
+
+  .advantages__park h4::before {
+    top: 11px;
+    left: 25px;
+    background-image: url("../img/70-mobile.png");
+    top: 22px;
+    left: 84px;
+  }
+
+  .advantages__content-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .advantages__top-block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+
+  .advantages__bottom-block {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .advantages__middle-block {
+    position: static;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    width: 100%;
   }
 }
 
