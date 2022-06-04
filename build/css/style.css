@@ -2151,7 +2151,7 @@ ul {
   }
 
   .promotions__inner {
-    padding: 66px 45px;
+    padding: 66px 45px 25px;
   }
 
   .promotions__inner h3 {
@@ -2193,6 +2193,20 @@ ul {
 
   .promotions__second-block-month {
     padding: 37px 58px 27px 27px;
+  }
+
+  .reviews__inner {
+    padding: 0 45px 30px;
+  }
+
+  .reviews__content-wrapper h3 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__comment {
+    width: 566px;
   }
 }
 
