@@ -2093,6 +2093,75 @@ ul {
   margin: 0;
 }
 
+.footer {
+  background-color: #030a1a;
+  color: #ffffff;
+}
+
+.footer__inner {
+  padding: 44px 103px;
+}
+
+.footer__content-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__content-wrapper p {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 4px;
+}
+
+.footer__item {
+  margin-right: 40px;
+}
+
+.footer__item a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer__item:last-child {
+  margin-right: 20px;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__social svg {
+  margin-left: 25px;
+}
+
+.footer__social svg:first-child {
+  margin-left: 0;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2589,6 +2658,24 @@ ul {
   .subscription__item-cost {
     padding: 64px 116px 91px;
     margin-bottom: 33px;
+  }
+
+  .footer__inner {
+    padding: 44px 46px;
+  }
+
+  .footer__content-wrapper p {
+    font-size: 24px;
+    line-height: 24px;
+    margin-right: 30px;
+  }
+
+  .footer__item {
+    margin-right: 30px;
+  }
+
+  .footer__social svg {
+    margin-left: 20px;
   }
 }
 
@@ -3140,7 +3227,7 @@ ul {
   }
 
   .contacts__address {
-    padding: 70px 15px;
+    padding: 70px 15px 47px;
   }
 
   .contacts__address h3 {
@@ -3157,6 +3244,66 @@ ul {
   .contacts__address .contacts__phone-text {
     width: 100%;
     margin-bottom: 13px;
+  }
+
+  .footer__inner {
+    padding: 50px 15px;
+  }
+
+  .footer__content-wrapper {
+    position: relative;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .footer__content-wrapper p {
+    position: absolute;
+    top: -1px;
+    left: 1px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .footer__list {
+    display: block;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    margin: 0 0 10px;
+    width: 100%;
+  }
+
+  .footer__item {
+    margin-bottom: 17px;
+    margin-right: 60px;
+  }
+
+  .footer__item a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer__item:first-child {
+    margin-top: 34px;
+  }
+
+  .footer__social svg {
+    margin-left: 35px;
+  }
+
+  .footer__social .footer__vk-link {
+    width: 32px;
+    height: 17px;
+  }
+
+  .footer__social .footer__insta-link {
+    width: 27px;
+    height: 27px;
+  }
+
+  .footer__social .footer__fb-link {
+    width: 14px;
+    height: 27px;
   }
 }
 
