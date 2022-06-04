@@ -96,12 +96,10 @@
 .reviews__comment {
   width: 560px;
   background: $color-resolution-blue;
-  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   margin: 0 auto;
   color: $color-default-white;
-  padding-left: 170px;
   text-align: left;
-  padding-top: 27px;
   padding: 27px 62px 35px 170px;
   position: relative;
 
@@ -112,47 +110,47 @@
     margin-bottom: 10px;
   }
 
-   p {
-     margin-top: 10px;
+  p {
+    margin-top: 10px;
 
-     br {
-       display: none;
-     }
-   }
+    br {
+      display: none;
+    }
+  }
 
-   &::before {
-     position: absolute;
-     content: "";
-     width: 80px;
-     height: 80px;
-     background-image: url("../img/comment-anna-orlova.png");
-     background-repeat: no-repeat;
-     left: 62px;
-     top: 62px;
-   }
+  &::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/comment-anna-orlova.png");
+    background-repeat: no-repeat;
+    left: 62px;
+    top: 62px;
+  }
 
-   @include vp-1279 {
-     width: 566px;
+  @include vp-1279 {
+    width: 566px;
 
-     p {
+    p {
       br {
         display: inline;
       }
-     }
-   }
+    }
+  }
 
-   @include vp-767 {
-     width: 226px;
-     padding: 23px 20px 17px;
-     text-align: center;
+  @include vp-767 {
+    width: 226px;
+    padding: 23px 20px 17px;
+    text-align: center;
 
-     h4 {
-       margin-left: 103px;
-       margin-bottom: 16px;
-       text-align: left;
-     }
+    h4 {
+      margin-left: 103px;
+      margin-bottom: 16px;
+      text-align: left;
+    }
 
-     p {
+    p {
       line-height: 140%;
 
       br {
@@ -162,12 +160,12 @@
       .reviews__br-1 {
         display: inline;
       }
-     }
+    }
 
-     &::before {
+    &::before {
       background-image: url("../img/comment-anna-orlova-mobile.png");
       left: 41px;
       top: 43px;
-     }
-   }
+    }
+  }
 }

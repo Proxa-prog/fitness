@@ -80,7 +80,7 @@
     }
 
     button[type="submit"] {
-      margin-top: 0px;
+      margin-top: 0;
       padding: 15px;
     }
   }
@@ -180,7 +180,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 15px;
+    padding: 70px 15px 47px;
 
     h3 {
       font-size: 32px;
