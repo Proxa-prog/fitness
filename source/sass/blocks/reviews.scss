@@ -4,7 +4,12 @@
   @include vp-1279 {
     margin-bottom: 72px;
   }
+
+  @include vp-767 {
+    margin-bottom: 49px;
+  }
 }
+
 .reviews__inner {
   padding: 30px 103px;
 
