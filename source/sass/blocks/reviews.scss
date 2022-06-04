@@ -1,5 +1,9 @@
 .reviews {
   margin-bottom: 91px;
+
+  @include vp-1279 {
+    margin-bottom: 72px;
+  }
 }
 .reviews__inner {
   padding: 30px 103px;

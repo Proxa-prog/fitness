@@ -2338,6 +2338,10 @@ ul {
     padding: 37px 58px 27px 27px;
   }
 
+  .reviews {
+    margin-bottom: 72px;
+  }
+
   .reviews__inner {
     padding: 0 45px 30px;
   }
@@ -2354,6 +2358,50 @@ ul {
 
   .reviews__comment p br {
     display: inline;
+  }
+
+  .contacts__free-training {
+    width: 100%;
+    padding: 65px 162px 64px 132px;
+  }
+
+  .contacts__form h3 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .contacts__address {
+    width: 100%;
+    padding: 66px 47px 34px 132px;
+  }
+
+  .contacts__address h3 {
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0 0 36px;
+  }
+
+  .contacts__address dl {
+    padding: 0;
+  }
+
+  .contacts__address dt {
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 7px;
+  }
+
+  .contacts__address dd {
+    font-size: 18px;
+    line-height: 152.34%;
+  }
+
+  .contacts__address .contacts__phone-text {
+    width: 47%;
+  }
+
+  .contacts__address .contacts__address-text {
+    width: 45.5%;
   }
 }
 
