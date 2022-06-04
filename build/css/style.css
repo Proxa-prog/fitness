@@ -1907,14 +1907,6 @@ ul {
   align-self: center;
 }
 
-.reviews__comment-wrapper .reviews__button-prev {
-  background-image: url("../img/svg/arrow-left.svg");
-}
-
-.reviews__comment-wrapper .reviews__button-next {
-  background-image: url("../img/svg/arrow-right.svg");
-}
-
 .reviews__comment {
   width: 560px;
   background: #1c3374;
@@ -1940,12 +1932,17 @@ ul {
   margin-top: 10px;
 }
 
+.reviews__comment p br {
+  display: none;
+}
+
 .reviews__comment::before {
   position: absolute;
   content: "";
   width: 80px;
   height: 80px;
   background-image: url("../img/comment-anna-orlova.png");
+  background-repeat: no-repeat;
   left: 62px;
   top: 62px;
 }
@@ -2207,6 +2204,10 @@ ul {
 
   .reviews__comment {
     width: 566px;
+  }
+
+  .reviews__comment p br {
+    display: inline;
   }
 }
 
@@ -2809,7 +2810,7 @@ ul {
   }
 
   .promotions__inner {
-    padding: 78px 15px;
+    padding: 78px 15px 4px;
   }
 
   .promotions__inner h3 {
@@ -2861,6 +2862,64 @@ ul {
 
   .promotions__second-block-item br {
     display: inline;
+  }
+
+  .reviews__inner {
+    padding: 0 16px 21px;
+  }
+
+  .reviews__content-wrapper {
+    width: 100%;
+  }
+
+  .reviews__content-wrapper h3 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .reviews__comment-wrapper {
+    width: 288px;
+    margin: 0 auto;
+  }
+
+  .reviews__comment-wrapper .reviews__button-prev svg {
+    width: 10px;
+    height: 19px;
+  }
+
+  .reviews__comment-wrapper .reviews__button-next svg {
+    width: 10px;
+    height: 19px;
+  }
+
+  .reviews__comment {
+    width: 226px;
+    padding: 23px 20px 17px;
+    text-align: center;
+  }
+
+  .reviews__comment h4 {
+    margin-left: 103px;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+
+  .reviews__comment p {
+    line-height: 140%;
+  }
+
+  .reviews__comment p br {
+    display: none;
+  }
+
+  .reviews__comment p .reviews__br-1 {
+    display: inline;
+  }
+
+  .reviews__comment::before {
+    background-image: url("../img/comment-anna-orlova-mobile.png");
+    left: 41px;
+    top: 43px;
   }
 }
 
