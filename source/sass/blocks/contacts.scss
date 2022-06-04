@@ -1,0 +1,114 @@
+.contacts__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts__free-training {
+  width: 50%;
+  background-color: $color-sapphire;
+  padding: 58px 168px 64px 103px;
+}
+
+.contacts__form {
+  h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-default-white;
+    margin: 0;
+  }
+
+  input {
+    width: 46%;
+    background-color: inherit;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: $color-default-white;
+    border-bottom: 1px solid $color-light-slate-grey;
+    font-size: 14px;
+    line-height: 16px;
+    padding-bottom: 5px;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+  }
+
+  button[type="submit"] {
+    margin-top: 30px;
+    width: 100%;
+    padding: 18px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-default-white;
+    background-color: inherit;
+    border: 3px solid $color-default-white;
+  }
+}
+
+.contacts__user-input {
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contacts__address {
+  width: 50%;
+  padding: 58px 47px 45px 120px;
+  text-align: left;
+  color: $color-sapphire;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid $color-light-slate-grey;
+
+  h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 49px;
+    line-height: 64px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+    width: 100%;
+  }
+
+  .contacts__address-text {
+    width: 46%;
+    border-right: 1px solid $color-light-slate-grey;
+  }
+
+  .contacts__phone-text {
+    width: 44%;
+  }
+
+  dl {
+    padding-left: 5px;
+    padding-top: 1px;
+    margin: 0;
+  }
+
+  dt {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 21px;
+  }
+
+  dd:last-child {
+    margin: 0;
+  }
+}
