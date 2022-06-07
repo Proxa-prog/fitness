@@ -1,22 +1,16 @@
-const buttonClickPrevious = (buttonName, slideIndex, slides, slider) => {
+const buttonClickPrevious = (buttonName, slider, newArray, allItem, list, count) => {
   buttonName.addEventListener('click', () => {
-    if (slideIndex === 0) {
-      slideIndex = slides.length - 1;
-    }
-
-    slideIndex--;
-    slider(slideIndex, true);
+    let lastElement = newArray.pop();
+    newArray.unshift(lastElement);
+    slider(newArray, allItem, list, count);
   });
 };
 
-const buttonClickForvard = (buttonName, slideIndex, slides, slider) => {
+const buttonClickForvard = (buttonName, slider, newArray, allItem, list, count) => {
   buttonName.addEventListener('click', () => {
-    if (slideIndex === slides.length - 1) {
-      slideIndex = 0;
-    }
-
-    slideIndex++;
-    slider(slideIndex, true);
+    let firstElement = newArray.shift();
+    newArray.push(firstElement);
+    slider(newArray, allItem, list, count);
   });
 };
 

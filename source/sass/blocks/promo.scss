@@ -204,6 +204,7 @@
   background-image: url("../img/man-in-magnezia-desktop.jpg");
   background-size: cover;
   background-position: center;
+  background-color: $color-smalt;
 
   @include retina {
     background-image: url("../img/man-in-magnezia-desktop@2x.jpg");
