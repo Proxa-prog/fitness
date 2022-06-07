@@ -9,8 +9,6 @@ const buttonForwardTreners = document.querySelector('.treners__button-forward');
 const buttonBackComment = document.querySelector('.reviews__button-prev');
 const buttonForwardComment = document.querySelector('.reviews__button-next');
 const slidesTreners = document.querySelectorAll('.treners__item');
-const slidesListTreners = document.querySelector('.treners__list');
-const slidesListComment = document.querySelector('.reviews__user-comment-wrapper');
 const comments = document.querySelectorAll('.reviews__comment');
 let slidesArray = Array.from(slidesTreners);
 let newArrayTreners = slidesArray.slice();
@@ -58,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     if (windowWidth < 1279 && windowWidth > 767) {
-      currentWidth = 2
+      currentWidth = 2;
       slider(newArrayTreners, '.treners__item', '.treners__list', currentWidth);
     }
 
