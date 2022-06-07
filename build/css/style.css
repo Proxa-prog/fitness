@@ -1401,6 +1401,7 @@ ul {
   background-image: url("../img/man-in-magnezia-desktop.jpg");
   background-size: cover;
   background-position: center;
+  background-color: #02359e;
 }
 
 .treners {
@@ -1461,7 +1462,6 @@ ul {
   height: 294px;
   margin: 0 auto;
   position: relative;
-  display: none;
 }
 
 .treners__item h4 {
@@ -1914,13 +1914,11 @@ ul {
 .reviews__comment {
   width: 560px;
   background: #1c3374;
-  -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
-  box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
+  -webkit-box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
   margin: 0 auto;
   color: #ffffff;
-  padding-left: 170px;
   text-align: left;
-  padding-top: 27px;
   padding: 27px 62px 35px 170px;
   position: relative;
 }
@@ -1949,6 +1947,10 @@ ul {
   background-repeat: no-repeat;
   left: 62px;
   top: 62px;
+}
+
+.reviews__user-comment-wrapper {
+  margin: 0 auto;
 }
 
 .contacts__inner {
@@ -3222,7 +3224,7 @@ ul {
   }
 
   .contacts__form button[type="submit"] {
-    margin-top: 0px;
+    margin-top: 0;
     padding: 15px;
   }
 
