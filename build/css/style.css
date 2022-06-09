@@ -854,11 +854,6 @@ ul {
   margin-right: auto;
 }
 
-.main-unit__header .main-unit__logo-header svg {
-  width: 82px;
-  height: 17x;
-}
-
 .main-unit__text-block {
   text-align: right;
   color: #ffffff;
@@ -2564,6 +2559,11 @@ ul {
     margin-bottom: 20px;
   }
 
+  .main-unit__header svg {
+    width: 82px;
+    height: 18px;
+  }
+
   .main-unit__text-block {
     width: 50%;
     padding: 46px 35px 0 85px;
@@ -2734,7 +2734,7 @@ ul {
 
   .footer__content-wrapper .main-unit__logo-footer svg {
     width: 82px;
-    height: 18x;
+    height: 18px;
   }
 
   .footer__item {
@@ -2788,7 +2788,7 @@ ul {
 
   .main-unit__header .main-unit__logo-header svg {
     width: 68px;
-    height: 15x;
+    height: 15px;
   }
 
   .main-unit__text-block {
@@ -3328,7 +3328,7 @@ ul {
 
   .footer__content-wrapper .main-unit__logo-footer svg {
     width: 68px;
-    height: 15x;
+    height: 15px;
   }
 
   .footer__list {

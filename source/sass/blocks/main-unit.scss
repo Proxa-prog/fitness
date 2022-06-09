@@ -49,11 +49,6 @@
 
   .main-unit__logo-header {
     margin-right: auto;
-
-    svg {
-      width: 82px;
-      height: 17x;
-    }
   }
 
   @include vp-1023 {
@@ -62,6 +57,11 @@
     line-height: 24px;
     letter-spacing: 0.02em;
     margin-bottom: 20px;
+
+    svg {
+      width: 82px;
+      height: 18px;
+    }
   }
 
   @include vp-767 {
@@ -76,7 +76,7 @@
     .main-unit__logo-header {
       svg {
         width: 68px;
-        height: 15x;
+        height: 15px;
       }
     }
   }
