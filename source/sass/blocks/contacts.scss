@@ -61,6 +61,7 @@
     color: $color-default-white;
     background-color: inherit;
     border: 3px solid $color-default-white;
+    user-select: none;
   }
 
   @include vp-1279 {
@@ -113,6 +114,10 @@
     text-transform: uppercase;
     margin: 0 0 14px;
     width: 100%;
+  }
+
+  address {
+    font-style: normal
   }
 
   .contacts__address-text {

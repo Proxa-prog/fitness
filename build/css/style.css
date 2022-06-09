@@ -950,6 +950,10 @@ ul {
   color: #ffffff;
 }
 
+.main-unit__img-block {
+  width: 500px;
+}
+
 .main-unit__img-block img {
   width: 500px;
   height: 556px;
@@ -1419,6 +1423,8 @@ ul {
 
 .treners {
   padding: 60px 83px 120px;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .treners h3 {
@@ -1482,6 +1488,26 @@ ul {
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
+}
+
+.treners__item h4:focus + .treners__info-wrapper {
+  padding-top: 53px;
+  background: rgba(16, 38, 84, 0.89);
+  overflow: auto;
+}
+
+.treners__item h4:focus + .treners__info-wrapper h4 {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0;
+}
+
+.treners__item h4:focus + .treners__info-wrapper ul {
+  opacity: 1;
+}
+
+.treners__item h4:focus + .treners__info-wrapper p {
+  opacity: 1;
 }
 
 .treners__list-info {
@@ -1552,22 +1578,27 @@ ul {
   opacity: 0;
 }
 
-.treners__info-wrapper:hover {
+.treners__info-wrapper:hover,
+.treners__info-wrapper :focus {
   padding-top: 53px;
   background: rgba(16, 38, 84, 0.89);
+  overflow: auto;
 }
 
-.treners__info-wrapper:hover h4 {
+.treners__info-wrapper:hover h4,
+.treners__info-wrapper :focus h4 {
   -webkit-box-ordinal-group: 1;
   -ms-flex-order: 0;
   order: 0;
 }
 
-.treners__info-wrapper:hover ul {
+.treners__info-wrapper:hover ul,
+.treners__info-wrapper :focus ul {
   opacity: 1;
 }
 
-.treners__info-wrapper:hover p {
+.treners__info-wrapper:hover p,
+.treners__info-wrapper :focus p {
   opacity: 1;
 }
 
@@ -1716,6 +1747,7 @@ ul {
   padding: 36px 34px;
   background: #1c3374;
   width: 240px;
+  height: 100%;
   color: #ffffff;
 }
 
@@ -1731,6 +1763,11 @@ ul {
   font-size: 26px;
   line-height: 150%;
   margin: 0 0 34px;
+}
+
+.promotions {
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .promotions__inner {
@@ -1813,6 +1850,7 @@ ul {
   height: 100%;
   background-repeat: no-repeat;
   background-image: url("../img/girl-on-blue-desktop.jpg");
+  background-size: contain;
 }
 
 .promotions__second-block {
@@ -1916,13 +1954,19 @@ ul {
 }
 
 .reviews__comment-wrapper button {
-  width: 16px;
+  width: 24px;
   height: 32px;
   border: none;
   background-color: inherit;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  margin-bottom: auto;
+  margin-top: 102px;
+}
+
+.reviews__comment-wrapper .reviews__button-prev {
+  padding-left: 0;
 }
 
 .reviews__comment {
@@ -2041,6 +2085,10 @@ ul {
   color: #ffffff;
   background-color: inherit;
   border: 3px solid #ffffff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .contacts__user-input {
@@ -2079,6 +2127,10 @@ ul {
   text-transform: uppercase;
   margin: 0 0 14px;
   width: 100%;
+}
+
+.contacts__address address {
+  font-style: normal;
 }
 
 .contacts__address .contacts__address-text {
@@ -2144,6 +2196,7 @@ ul {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-bottom: auto;
   padding-bottom: 4px;
   margin-left: 38px;
 }
@@ -2170,13 +2223,16 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: auto;
+  width: 110px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.footer__social svg {
+.footer__social a {
   margin-left: 25px;
 }
 
-.footer__social svg:first-child {
+.footer__social a:first-child {
   margin-left: 0;
 }
 
@@ -2274,6 +2330,7 @@ ul {
   .treners {
     padding: 0 80px 97px;
     text-align: center;
+    max-width: 768px;
   }
 
   .treners h3 {
@@ -2300,23 +2357,27 @@ ul {
     height: 100%;
   }
 
-  .treners__info-wrapper:hover {
+  .treners__info-wrapper:hover,
+  .treners__info-wrapper :focus {
     background-color: inherit;
     padding-top: 70px;
   }
 
-  .treners__info-wrapper:hover h4 {
+  .treners__info-wrapper:hover h4,
+  .treners__info-wrapper :focus h4 {
     margin: 0;
     -webkit-box-ordinal-group: 101;
     -ms-flex-order: 100;
     order: 100;
   }
 
-  .treners__info-wrapper:hover ul {
+  .treners__info-wrapper:hover ul,
+  .treners__info-wrapper :focus ul {
     opacity: 0;
   }
 
-  .treners__info-wrapper:hover p {
+  .treners__info-wrapper:hover p,
+  .treners__info-wrapper :focus p {
     opacity: 0;
   }
 
@@ -2325,6 +2386,7 @@ ul {
     padding-top: 43px;
     padding-left: 20px;
     padding-right: 20px;
+    overflow: auto;
   }
 
   .treners__info-wrapper:active h4 {
@@ -2741,7 +2803,11 @@ ul {
     margin-right: 30px;
   }
 
-  .footer__social svg {
+  .footer__social {
+    width: 100px;
+  }
+
+  .footer__social a {
     margin-left: 20px;
   }
 }
@@ -2773,7 +2839,7 @@ ul {
   .main-unit {
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
     padding-top: 20px;
-    padding-bottom: 82px;
+    padding-bottom: 79px;
   }
 
   .main-unit__header {
@@ -2793,13 +2859,14 @@ ul {
 
   .main-unit__text-block {
     width: auto;
-    padding: 48px 0 0 0;
+    padding: 51px 0 0 0;
     text-align: right;
   }
 
   .main-unit__text-block h1 {
     font-size: 78px;
     line-height: 78px;
+    margin-bottom: 49px;
   }
 
   .main-unit__text-block p {
@@ -3188,6 +3255,7 @@ ul {
   .promotions__first-block-img {
     width: 290px;
     background-image: url("../img/girl-on-blue-mobile.jpg");
+    background-size: cover;
   }
 
   .promotions__second-block-item {
@@ -3231,9 +3299,23 @@ ul {
     margin: 0 auto;
   }
 
+  .reviews__comment-wrapper button {
+    margin-top: 157px;
+  }
+
+  .reviews__comment-wrapper .reviews__button-prev {
+    padding-left: 0;
+    padding-right: 20px;
+  }
+
   .reviews__comment-wrapper .reviews__button-prev svg {
     width: 10px;
     height: 19px;
+  }
+
+  .reviews__comment-wrapper .reviews__button-next {
+    padding-right: 0;
+    padding-left: 16px;
   }
 
   .reviews__comment-wrapper .reviews__button-next svg {
@@ -3312,7 +3394,7 @@ ul {
   }
 
   .footer__inner {
-    padding: 50px 15px;
+    padding: 46px 15px;
   }
 
   .footer__content-wrapper {
@@ -3352,10 +3434,18 @@ ul {
   }
 
   .footer__item:first-child {
-    margin-top: 34px;
+    margin-top: 38px;
   }
 
-  .footer__social svg {
+  .footer__item:nth-child(n + 3) {
+    padding-left: 5px;
+  }
+
+  .footer__social {
+    width: auto;
+  }
+
+  .footer__social a {
     margin-left: 35px;
   }
 

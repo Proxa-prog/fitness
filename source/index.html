@@ -248,7 +248,7 @@
               </svg>
             </button>
             <ul class="treners__list">
-              <li class="treners__item treners__item-anna-pavlova1" tabindex="0">
+              <li class="treners__item treners__item-anna-pavlova1" data-first="first" tabindex="0">
                 <picture>
                   <!-- 1x: 260px, 2x 520px -->
                   <source type="image/webp" srcset="img/anna-pavlova.webp 1x, img/anna-pavlova@2x.webp 2x">
@@ -266,7 +266,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="treners__item treners__item-aleksey-lavrov2" tabindex="0">
+              <li class="treners__item treners__item-aleksey-lavrov2">
                 <picture>
                   <!-- 1x: 260px, 2x 520px -->
                   <source type="image/webp" srcset="img/aleksey-lavrov.webp 1x, img/aleksey-lavrov@2x.webp 2x">
@@ -274,7 +274,7 @@
                   <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg" alt="Алексей Лавров"
                     width="260" height="294">
                 </picture>
-                <div class="treners__info-wrapper">
+                <div class="treners__info-wrapper" tabindex="0">
                   <h4>Алексей Лавров</h4>
                   <p>CrossFit</p>
                   <ul class="treners__list-info">
@@ -374,7 +374,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="treners__item treners__item-anna-pavlova8" tabindex="0">
+              <li class="treners__item treners__item-anna-pavlova8" tabindex="0" data-last="last">
                 <picture>
                   <!-- 1x: 260px, 2x 520px -->
                   <source type="image/webp" srcset="img/anna-pavlova.webp 1x, img/anna-pavlova@2x.webp 2x">
@@ -497,7 +497,7 @@
               </div>
               <button class="reviews__button-next">
                 <span class="visually-hidden">Следующий комментарий</span>
-                <svg width="16" height="32" viewBox="0 0 16 32" fill="none">
+                <svg width="18" height="32" viewBox="0 0 16 32" fill="none">
                   <use xlink:href="img/sprite/sprite.svg#arrow-right"></use>
                 </svg>
               </button>
@@ -522,7 +522,7 @@
             <div class="contacts__address-text">
               <dl>
                 <dt>Адрес:</dt>
-                <dd>г. Омск, ул. 60 лет Октября, 7</dd>
+                <dd><address>г. Омск, ул. 60 лет Октября, 7</address></dd>
                 <dt>График работы:</dt>
                 <dd>Пн-Вс: с 8:00 до 22:00</dd>
               </dl>
@@ -530,9 +530,9 @@
             <div class="contacts__phone-text">
               <dl>
                 <dt>Телефон:</dt>
-                <dd>8-800-555-55-55</dd>
+                <dd><a href="tel:+78005555555">8-800-555-55-55</a></dd>
                 <dt>Email:</dt>
-                <dd>omsk@supergym.ru</dd>
+                <dd><a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a></dd>
               </dl>
             </div>
           </div>
@@ -555,15 +555,21 @@
             <li class="footer__item"><a href="#">Расписание</a></li>
           </ul>
           <div class="footer__social">
-            <svg class="footer__vk-link" width="24" height="13" viewBox="0 0 24 13" fill="none" tabindex="0">
-              <use xlink:href="img/sprite/sprite.svg#vk"></use>
-            </svg>
-            <svg class="footer__insta-link" width="24" height="24" viewBox="0 0 24 24" fill="none" tabindex="0">
-              <use xlink:href="img/sprite/sprite.svg#insta"></use>
-            </svg>
-            <svg class="footer__fb-link" width="12" height="24" viewBox="0 0 12 24" fill="none" tabindex="0">
-              <use xlink:href="img/sprite/sprite.svg#facebook"></use>
-            </svg>
+            <a href="#">
+              <svg class="footer__vk-link" width="24" height="13" viewBox="0 0 24 13" fill="none">
+                <use xlink:href="img/sprite/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer__insta-link" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use xlink:href="img/sprite/sprite.svg#insta"></use>
+              </svg>
+            </a>
+            <a href="#">
+              <svg class="footer__fb-link" width="12" height="24" viewBox="0 0 12 24" fill="none">
+                <use xlink:href="img/sprite/sprite.svg#facebook"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>

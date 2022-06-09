@@ -12,7 +12,7 @@
   @include vp-767 {
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
     padding-top: 20px;
-    padding-bottom: 82px;
+    padding-bottom: 79px;
   }
 }
 
@@ -177,12 +177,13 @@
 
   @include vp-767 {
     width: auto;
-    padding: 48px 0 0 0;
+    padding: 51px 0 0 0;
     text-align: right;
 
     h1 {
       font-size: 78px;
       line-height: 78px;
+      margin-bottom: 49px;
     }
 
     p {
@@ -228,6 +229,8 @@
 }
 
 .main-unit__img-block {
+  width: 500px;
+
   img {
     width: 500px;
     height: 556px;
