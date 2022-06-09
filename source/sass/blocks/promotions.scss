@@ -37,6 +37,7 @@
 .promotions__content-wrapper {
   margin: 0 auto;
   display: flex;
+  width: 100%;
 
   @include vp-1279 {
     flex-wrap: wrap;
@@ -141,7 +142,7 @@
 
 .promotions__second-block {
   margin: 0 20px;
-  width: 46.6%;
+  width: 99.6%;
 
   @include vp-1279 {
     width: 100%;
@@ -159,7 +160,7 @@
   border-width: 7px;
   border-style: solid;
   border-image-slice: 1;
-  padding: 37px 27px 27px;
+  padding: 31px 27px 27px;
   text-align: left;
   color: $color-resolution-blue;
   display: flex;
@@ -172,7 +173,7 @@
     font-size: 26px;
     margin-top: 0;
     margin-bottom: 0;
-    line-height: 0;
+    line-height: 29%;
   }
 
   p {

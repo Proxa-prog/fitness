@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', () => {
     let windowWidth = document.documentElement.clientWidth;
 
-    if (windowWidth > 1024) {
+    if (windowWidth > 1279) {
       currentWidth = 4;
       slider(newArrayTreners, '.treners__item', '.treners__list', currentWidth);
     }
