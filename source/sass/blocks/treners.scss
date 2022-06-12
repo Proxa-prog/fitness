@@ -65,6 +65,12 @@
 .treners__slider-wrapper {
   position: relative;
 
+  button {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
   @include vp-767 {
     display: flex;
   }
@@ -120,7 +126,6 @@
 
 .treners__item {
   width: 260px;
-  height: 294px;
   margin: 0 auto;
   position: relative;
 
@@ -129,23 +134,23 @@
     font-size: 18px;
     line-height: 150%;
     color: $color-default-white;
+  }
 
-    &:focus + .treners__info-wrapper {
-      padding-top: 53px;
-      background: rgba(16, 38, 84, 0.89);
-      overflow: auto;
+  &:focus .treners__info-wrapper {
+    padding-top: 53px;
+    background: rgba(16, 38, 84, 0.89);
+    overflow: auto;
 
-      h4 {
-        order: 0;
-      }
+    h4 {
+      order: 0;
+    }
 
-      ul {
-        opacity: 1;
-      }
+    ul {
+      opacity: 1;
+    }
 
-      p {
-        opacity: 1;
-      }
+    p {
+      opacity: 1;
     }
   }
 
@@ -154,13 +159,17 @@
 
     img {
       width: 100%;
-      height: 100%;
+      height: 294px;
     }
   }
 
   @include vp-767 {
     width: 226px;
     height: 274px;
+
+    img {
+      height: 274px;
+    }
   }
 }
 
@@ -221,8 +230,7 @@
     opacity: 0;
   }
 
-  &:hover,
-  :focus {
+  &:hover {
     padding-top: 53px;
     background: rgba(16, 38, 84, 0.89);
     overflow: auto;
@@ -279,5 +287,9 @@
         opacity: 1;
       }
     }
+  }
+
+  @include vp-767 {
+    padding: 30px 27px 7px;
   }
 }

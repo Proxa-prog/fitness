@@ -37,10 +37,18 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     if (windowWidth >= 768 && windowWidth < 1279) {
+      let firstIteration = newArrayTreners.shift();
+      newArrayTreners.push(firstIteration);
+      let secondIteration = newArrayTreners.shift();
+      newArrayTreners.push(secondIteration);
       currentWidth = 2;
     }
 
     if (windowWidth < 768) {
+      let firstIteration = newArrayTreners.shift();
+      newArrayTreners.push(firstIteration);
+      let secondIteration = newArrayTreners.shift();
+      newArrayTreners.push(secondIteration);
       currentWidth = 1;
     }
   };

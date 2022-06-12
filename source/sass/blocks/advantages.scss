@@ -18,7 +18,7 @@
   }
 
   @include vp-1279 {
-    padding-top: 57px;
+    padding-top: 51px;
 
     h3 {
       font-size: 42px;
@@ -162,7 +162,7 @@
   }
 
   @include vp-767 {
-    padding: 117px 0 6px;
+    padding: 121px 0 6px;
 
     h4 {
       &::before {
@@ -339,5 +339,9 @@
     position: static;
     transform: none;
     width: 100%;
+
+    .advantages__middle-block-text {
+      margin-top: 12px;
+    }
   }
 }

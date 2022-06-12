@@ -76,6 +76,10 @@
     color: $color-default-white;
     font-size: 14px;
     line-height: 16px;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &:last-child {
@@ -117,6 +121,11 @@
 
     &:first-child {
       margin-left: 0;
+    }
+
+    &:hover {
+      text-shadow: 0 0 20px $color-default-white;
+      box-shadow: 0 0 10px $color-default-white;
     }
   }
 

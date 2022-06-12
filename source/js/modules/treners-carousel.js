@@ -20,7 +20,6 @@ const slider = (newArray, allItem, list, count) => {
         buttonForwardTreners.disabled = false;
       }
 
-
       if (!newArray[i].dataset.first) {
         dataSetCount++;
       }

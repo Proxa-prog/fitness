@@ -43,13 +43,13 @@
               <div class="main-unit__img-block">
                 <picture>
                   <!-- 1x: 500px, 2x 1000px -->
-                  <source type="image/webp" media="(min-width: 1024px)"
+                  <source type="image/webp" media="(min-width: 1290px)"
                     srcset="img/supeman-desktop.webp 1x, img/supeman-desktop@2x.webp 2x">
                   <!-- 1x: 324px, 2x 648px -->
                   <source type="image/webp" media="(min-width: 768px)"
                     srcset="img/supeman-tablet.webp 1x, img/supeman-tablet@2x.webp 2x">
                   <!-- 1x: 500px, 2x 1000px -->
-                  <source media="(min-width: 1024px)"
+                  <source media="(min-width: 1290px)"
                     srcset="img/supeman-desktop.jpg 1x, img/supeman-desktop@2x.jpg 2x">
                   <!-- 1x: 324px, 2x 648px -->
                   <img src="img/supeman-tablet.jpg" srcset="img/supeman-tablet@2x.jpg" alt="Супермен" width="324"
@@ -95,7 +95,7 @@
                 <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?enablejsapi=1&version=3&wmode=transparent"
                   width="364" height="228" title="Видео HTML Academy"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+                  allowfullscreen tabindex="-1"></iframe>
                 <picture>
                   <!-- 1x: 364px, 2x 728px -->
                   <source type="image/webp" media="(min-width: 1024px)"
@@ -114,9 +114,9 @@
                     srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
                   <!-- 1x: 320px, 2x 640px -->
                   <img src="img/video-preview-mobile.jpg" srcset="img/video-preview-mobile@2x.jpg" width="320"
-                    height="167" alt="Тренажёрный зал">
+                    height="167" alt="Тренажёрный зал" tabindex="-1">
                 </picture>
-                <div class="gym__shadow"></div>
+                <div class="gym__shadow" tabindex="-1"></div>
               </div>
             </div>
           </div>
@@ -134,28 +134,34 @@
             </ul>
             <ul class="subscription__list-cost subscription__list-cost-one-month">
               <li class="subscription__item-cost">
-                <h3>С тренером</h3>
-                <p>12 занятий</p>
-                <div class="subscription__cost-wrapper" data-price="5000">
-                  <p class="subscription__price">5000</p>
+                <div class="subscription__item-cost-inner">
+                  <h3>С тренером</h3>
+                  <p>12 занятий</p>
+                  <div class="subscription__cost-wrapper" data-price="5000">
+                    <p class="subscription__price">5000</p>
+                  </div>
+                  <a href="#">Купить абонемент</a>
                 </div>
-                <a href="#">Купить абонемент</a>
               </li>
               <li class="subscription__item-cost subscription__item-cost-current">
-                <h3>Дневной</h3>
-                <p>с 8:00 до 17:00 </p>
-                <div class="subscription__cost-wrapper" data-price="1700">
-                  <p class="subscription__price" data-price="1700">1700</p>
+                <div class="subscription__item-cost-inner">
+                  <h3>Дневной</h3>
+                  <p>с 8:00 до 17:00 </p>
+                  <div class="subscription__cost-wrapper" data-price="1700">
+                    <p class="subscription__price" data-price="1700">1700</p>
+                  </div>
+                  <a href="#">Купить абонемент</a>
                 </div>
-                <a href="#">Купить абонемент</a>
               </li>
               <li class="subscription__item-cost">
-                <h3>Полный день</h3>
-                <p>с 8:00 до 22:00 </p>
-                <div class="subscription__cost-wrapper" data-price="2700">
-                  <p class="subscription__price" data-price="2700">2700</p>
+                <div class="subscription__item-cost-inner">
+                  <h3>Полный день</h3>
+                  <p>с 8:00 до 22:00 </p>
+                  <div class="subscription__cost-wrapper" data-price="2700">
+                    <p class="subscription__price" data-price="2700">2700</p>
+                  </div>
+                  <a href="#">Купить абонемент</a>
                 </div>
-                <a href="#">Купить абонемент</a>
               </li>
             </ul>
             <ul class="subscription__list-cost subscription__list-cost-six-month">
@@ -266,7 +272,7 @@
                   </ul>
                 </div>
               </li>
-              <li class="treners__item treners__item-aleksey-lavrov2">
+              <li class="treners__item treners__item-aleksey-lavrov2"  tabindex="0">
                 <picture>
                   <!-- 1x: 260px, 2x 520px -->
                   <source type="image/webp" srcset="img/aleksey-lavrov.webp 1x, img/aleksey-lavrov@2x.webp 2x">
@@ -274,7 +280,7 @@
                   <img src="img/aleksey-lavrov.jpg" srcset="img/aleksey-lavrov@2x.jpg" alt="Алексей Лавров"
                     width="260" height="294">
                 </picture>
-                <div class="treners__info-wrapper" tabindex="0">
+                <div class="treners__info-wrapper">
                   <h4>Алексей Лавров</h4>
                   <p>CrossFit</p>
                   <ul class="treners__list-info">
