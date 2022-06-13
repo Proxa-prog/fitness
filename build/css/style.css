@@ -1811,7 +1811,7 @@ ul {
 }
 
 .promotions__inner {
-  padding: 96px 83px 45px;
+  padding: 96px 0 45px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1835,7 +1835,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  max-width: 1200px;
 }
 
 .promotions__first-block {
@@ -2558,51 +2558,6 @@ ul {
     margin: 20px auto 0;
   }
 
-  .promotions__inner {
-    padding: 72px 45px 25px;
-  }
-
-  .promotions__inner h3 {
-    font-size: 42px;
-    line-height: 42px;
-    margin-bottom: 46px;
-  }
-
-  .promotions__content-wrapper {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-
-  .promotions__first-block {
-    margin: 0 auto 30px;
-  }
-
-  .promotions__first-block-img {
-    width: 399px;
-    background-image: url("../img/girl-on-blue-tablet.jpg");
-  }
-
-  .promotions__second-block {
-    width: 100%;
-    margin: 0 0 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .promotions__second-block-item {
-    width: 48%;
-  }
-
-  .promotions__second-block-month {
-    padding: 37px 58px 27px 27px;
-  }
-
   .reviews {
     margin-bottom: 72px;
   }
@@ -2668,12 +2623,6 @@ ul {
 
   .contacts__address .contacts__address-text {
     width: 45.5%;
-  }
-}
-
-@media (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1279px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1279px) and (min-resolution: 144dpi), (max-width: 1279px) and (min-resolution: 1.5dppx) {
-  .promotions__first-block-img {
-    background-image: url("../img/girl-on-blue-tablet@2x.jpg");
   }
 }
 
@@ -2882,6 +2831,51 @@ ul {
     opacity: 1;
   }
 
+  .promotions__inner {
+    padding: 72px 45px 25px;
+  }
+
+  .promotions__inner h3 {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 46px;
+  }
+
+  .promotions__content-wrapper {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .promotions__first-block {
+    margin: 0 auto 30px;
+  }
+
+  .promotions__first-block-img {
+    width: 399px;
+    background-image: url("../img/girl-on-blue-tablet.jpg");
+  }
+
+  .promotions__second-block {
+    width: 100%;
+    margin: 0 0 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .promotions__second-block-item {
+    width: 48%;
+  }
+
+  .promotions__second-block-month {
+    padding: 37px 58px 27px 27px;
+  }
+
   .footer__inner {
     padding: 44px 46px;
   }
@@ -2911,6 +2905,10 @@ ul {
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .gym__img-foto {
     background-image: url("../img/gym-tablet@2x.jpg");
+  }
+
+  .promotions__first-block-img {
+    background-image: url("../img/girl-on-blue-tablet@2x.jpg");
   }
 }
 

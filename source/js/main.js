@@ -37,10 +37,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     if (windowWidth >= 768 && windowWidth < 1023) {
-      let firstIteration = newArrayTreners.shift();
-      newArrayTreners.push(firstIteration);
-      let secondIteration = newArrayTreners.shift();
-      newArrayTreners.push(secondIteration);
+      // let firstIteration = newArrayTreners.shift();
+      // newArrayTreners.push(firstIteration);
+      // let secondIteration = newArrayTreners.shift();
+      // newArrayTreners.push(secondIteration);
       currentWidth = 2;
     }
 
