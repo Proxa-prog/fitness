@@ -32,11 +32,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const checkWindowWidth = () => {
     let windowWidth = document.documentElement.clientWidth;
 
-    if (windowWidth >= 1279) {
+    if (windowWidth >= 1023) {
       currentWidth = 4;
     }
 
-    if (windowWidth >= 768 && windowWidth < 1279) {
+    if (windowWidth >= 768 && windowWidth < 1023) {
       let firstIteration = newArrayTreners.shift();
       newArrayTreners.push(firstIteration);
       let secondIteration = newArrayTreners.shift();
@@ -58,12 +58,12 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', () => {
     let windowWidth = document.documentElement.clientWidth;
 
-    if (windowWidth > 1279) {
+    if (windowWidth > 1023) {
       currentWidth = 4;
       slider(newArrayTreners, '.treners__item', '.treners__list', currentWidth);
     }
 
-    if (windowWidth < 1279 && windowWidth > 767) {
+    if (windowWidth < 1023 && windowWidth > 767) {
       currentWidth = 2;
       slider(newArrayTreners, '.treners__item', '.treners__list', currentWidth);
     }
