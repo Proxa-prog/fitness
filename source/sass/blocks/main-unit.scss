@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   padding: 30px 0 49px;
 
-  @include vp-1023 {
+  @include vp-1279 {
     background: conic-gradient(from 139.4deg at 20.7% 35.74%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
     padding-top: 38px;
     padding-bottom: 81px;
@@ -12,7 +12,7 @@
   @include vp-767 {
     background: conic-gradient(from 171.43deg at 35.31% 34.22%, $color-venetian-red -46.69deg, $color-dark-cerulean 32.24deg, $color-venetian-red 313.31deg, $color-dark-cerulean 392.24deg);
     padding-top: 20px;
-    padding-bottom: 82px;
+    padding-bottom: 79px;
   }
 }
 
@@ -25,6 +25,11 @@
   display: flex;
   justify-content: center;
   width: 100%;
+
+  @include vp-1279 {
+    width: 720px;
+    margin: 0 auto;
+  }
 }
 
 .main-unit__header {
@@ -51,7 +56,7 @@
     margin-right: auto;
   }
 
-  @include vp-1023 {
+  @include vp-1279 {
     padding: 0;
     font-size: 24px;
     line-height: 24px;
@@ -89,6 +94,7 @@
   margin: 0;
   padding: 110px 65px 0 18px;
   position: relative;
+  margin-left: auto;
 
   p {
     font-family: "Bebas Neue", sans-serif;
@@ -127,6 +133,11 @@
     line-height: 14px;
     letter-spacing: 0.05em;
     user-select: none;
+
+    &:hover {
+      text-shadow: 0 0 10px $color-default-white;
+      box-shadow: 0 0 10px $color-default-white;
+    }
   }
 
   .main-unit__text-no-desktop-list {
@@ -141,9 +152,10 @@
     text-transform: none;
   }
 
-  @include vp-1023 {
+  @include vp-1279 {
     width: 50%;
     padding: 46px 35px 0 85px;
+    margin: 0;
 
     p {
       font-size: 34px;
@@ -165,7 +177,8 @@
     .main-unit__text-no-desktop-list {
       position: absolute;
       top: 187px;
-      left: 4px;
+      left: 0;
+      right: 244px;
       display: block;
       font-family: "Roboto Condensed", sans-serif;
       font-weight: 400;
@@ -177,12 +190,13 @@
 
   @include vp-767 {
     width: auto;
-    padding: 48px 0 0 0;
+    padding: 51px 0 0 0;
     text-align: right;
 
     h1 {
       font-size: 78px;
       line-height: 78px;
+      margin-bottom: 49px;
     }
 
     p {
@@ -193,6 +207,7 @@
     .main-unit__text-no-desktop-list {
       top: 173px;
       left: -1px;
+      right: auto;
     }
 
     a {
@@ -203,14 +218,16 @@
 }
 
 .main-unit__list-block {
-  width: 15.4%;
+  width: 1.4%;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-end;
   padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: 70px;
 
-  @include vp-1023 {
+  @include vp-1279 {
     display: none;
   }
 }
@@ -224,17 +241,27 @@
     font-size: 12px;
     line-height: 14px;
     color: $color-default-white;
+    border-radius: 50%;
+
+    &:hover {
+      text-shadow: 0 0 10px $color-default-white;
+      box-shadow: 0 0 10px $color-default-white;
+    }
   }
 }
 
 .main-unit__img-block {
+  width: 500px;
+  margin-right: 110px;
+
   img {
     width: 500px;
     height: 556px;
   }
 
-  @include vp-1023 {
+  @include vp-1279 {
     width: 324px;
+    margin-right: 0;
 
     img {
       width: 324px;

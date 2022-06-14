@@ -1,5 +1,7 @@
 .treners {
   padding: 60px 83px 120px;
+  max-width: 1366px;
+  margin: 0 auto;
 
   h3 {
     font-family: "Bebas Neue", sans-serif;
@@ -12,8 +14,8 @@
     margin-bottom: 55px;
   }
 
-  @include vp-1279 {
-    padding: 0 80px 97px;
+  @include vp-1023 {
+    padding: 60px 83px 103px;
     text-align: center;
 
     h3 {
@@ -39,7 +41,7 @@
   justify-content: center;
   position: relative;
 
-  @include vp-1279 {
+  @include vp-1023 {
     .treners__item-anna-pavlova {
       display: none;
     }
@@ -62,7 +64,19 @@
 .treners__slider-wrapper {
   position: relative;
 
+  button {
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  @include vp-1023 {
+    width: 599px;
+    margin: 0 auto;
+  }
+
   @include vp-767 {
+    width: auto;
     display: flex;
   }
 }
@@ -72,11 +86,15 @@
   z-index: 1000;
   width: 18px;
   height: 32px;
-  left: -36px;
-  top: 132px;
+  left: -44px;
+  top: 42%;
   border: none;
   background-color: inherit;
   cursor: pointer;
+
+  @include vp-1023 {
+    top: 45%;
+  }
 
   @include vp-767 {
     position: static;
@@ -96,11 +114,15 @@
   z-index: 1000;
   width: 18px;
   height: 32px;
-  right: -36px;
-  top: 132px;
+  right: -30px;
+  top: 42%;
   border: none;
   background-color: inherit;
   cursor: pointer;
+
+  @include vp-1023 {
+    top: 45%;
+  }
 
   @include vp-767 {
     position: static;
@@ -117,8 +139,7 @@
 
 .treners__item {
   width: 260px;
-  height: 294px;
-  margin: 0 auto;
+  margin: 0 20px;
   position: relative;
 
   h4 {
@@ -128,18 +149,41 @@
     color: $color-default-white;
   }
 
-  @include vp-1279 {
+  &:focus .treners__info-wrapper {
+    padding-top: 53px;
+    background: rgba(16, 38, 84, 0.89);
+    overflow: auto;
+
+    h4 {
+      order: 0;
+    }
+
+    ul {
+      opacity: 1;
+    }
+
+    p {
+      opacity: 1;
+    }
+  }
+
+  @include vp-1023 {
     width: 268px;
 
     img {
       width: 100%;
-      height: 100%;
+      height: 294px;
     }
   }
 
   @include vp-767 {
     width: 226px;
     height: 274px;
+    margin: 0 auto;
+
+    img {
+      height: 274px;
+    }
   }
 }
 
@@ -167,25 +211,6 @@
     left: -16px;
     top: 7px;
   }
-
-  // &:active + .treners__info-wrapper {
-  //   background: rgba(16, 38, 84, 0.89);
-  //   padding-top: 43px;
-  //   padding-left: 20px;
-  //   padding-right: 20px;
-
-  //   h4 {
-  //     order: 0;
-  //   }
-
-  //   ul {
-  //     opacity: 1;
-  //   }
-
-  //   p {
-  //     opacity: 1;
-  //   }
-  // }
 }
 
 .treners__info-wrapper {
@@ -205,10 +230,11 @@
   h4 {
     margin: 0;
     order: 100;
+    margin-top: auto;
   }
 
   p {
-    opacity: 0;
+    display: none;
     margin: 0 0 28px;
     font-size: 16px;
     line-height: 150%;
@@ -216,28 +242,33 @@
   }
 
   ul {
-    opacity: 0;
+    display: none;
   }
 
   &:hover {
     padding-top: 53px;
     background: rgba(16, 38, 84, 0.89);
+    overflow: auto;
 
     h4 {
       order: 0;
+      margin-top: 0;
     }
 
     ul {
       opacity: 1;
+      display: block;
     }
 
     p {
       opacity: 1;
+      display: block;
     }
   }
 
-  @include vp-1279 {
-    &:hover {
+  @include vp-1023 {
+    &:hover,
+    :focus {
       background-color: inherit;
       padding-top: 70px;
 
@@ -260,6 +291,7 @@
       padding-top: 43px;
       padding-left: 20px;
       padding-right: 20px;
+      overflow: auto;
 
       h4 {
         order: 0;
@@ -273,5 +305,9 @@
         opacity: 1;
       }
     }
+  }
+
+  @include vp-767 {
+    padding: 30px 27px 7px;
   }
 }
