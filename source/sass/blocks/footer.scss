@@ -4,10 +4,10 @@
 }
 
 .footer__inner {
-  padding: 44px 103px;
+  padding: 40px 92px 34px 103px;
 
   @include vp-1023 {
-    padding: 44px 46px;
+    padding: 46px 46px;
   }
 
   @include vp-767 {
@@ -58,7 +58,11 @@
   margin: 0 auto;
   margin-bottom: auto;
   padding-bottom: 4px;
-  margin-left: 38px;
+  margin-left: 66px;
+
+  @include vp-1023 {
+    margin: 0px auto auto 58px;
+  }
 
   @include vp-767 {
     display: block;
@@ -113,15 +117,11 @@
   display: flex;
   align-items: center;
   margin-bottom: auto;
-  width: 110px;
+  width: 148px;
   flex-wrap: wrap;
 
   a {
     margin-left: 25px;
-
-    &:first-child {
-      margin-left: 0;
-    }
 
     &:hover {
       text-shadow: 0 0 20px $color-default-white;
@@ -130,7 +130,7 @@
   }
 
   @include vp-1023 {
-    width: 100px;
+    width: 120px;
 
     a {
       margin-left: 20px;
@@ -141,7 +141,9 @@
     width: auto;
 
     a {
-      margin-left: 35px;
+      margin-left: 0;
+      width: 32px;
+      margin-right: 35px;
     }
 
     .footer__vk-link {
