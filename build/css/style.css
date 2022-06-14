@@ -1754,6 +1754,7 @@ ul {
 .advantages__content-wrapper {
   margin: 0 auto;
   max-width: 1040px;
+  position: relative;
 }
 
 .advantages__top-block {
@@ -1779,7 +1780,7 @@ ul {
 
 .advantages__middle-block {
   position: absolute;
-  top: 60%;
+  top: 49%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -1787,7 +1788,7 @@ ul {
   padding: 36px 34px;
   background: #1c3374;
   width: 240px;
-  height: 100%;
+  height: 86%;
   color: #ffffff;
 }
 

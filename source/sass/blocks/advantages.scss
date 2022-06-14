@@ -255,6 +255,7 @@
 .advantages__content-wrapper {
   margin: 0 auto;
   max-width: 1040px;
+  position: relative;
 
   @include vp-767 {
     display: flex;
@@ -292,13 +293,13 @@
 
 .advantages__middle-block {
   position: absolute;
-  top: 60%;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 36px 34px;
   background: $color-resolution-blue;
   width: 240px;
-  height: 100%;
+  height: 86%;
   color: $color-default-white;
 
   .advantages__middle-block-number {
