@@ -1646,6 +1646,7 @@ ul {
   text-align: center;
   padding: 66px 50px;
   color: #102654;
+  background-color: #f8f9fc;
 }
 
 .advantages h3 {
@@ -2234,7 +2235,7 @@ ul {
 }
 
 .footer__inner {
-  padding: 44px 103px;
+  padding: 40px 92px 34px 103px;
 }
 
 .footer__content-wrapper {
@@ -2261,7 +2262,7 @@ ul {
   margin: 0 auto;
   margin-bottom: auto;
   padding-bottom: 4px;
-  margin-left: 38px;
+  margin-left: 66px;
 }
 
 .footer__item {
@@ -2290,17 +2291,13 @@ ul {
   -ms-flex-align: center;
   align-items: center;
   margin-bottom: auto;
-  width: 110px;
+  width: 148px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .footer__social a {
   margin-left: 25px;
-}
-
-.footer__social a:first-child {
-  margin-left: 0;
 }
 
 .footer__social a:hover {
@@ -2540,9 +2537,10 @@ ul {
   }
 
   .advantages__middle-block {
-    top: 57%;
+    top: 49%;
     padding: 14px 55px 37px;
     width: 442px;
+    height: 47%;
   }
 
   .advantages__middle-block .advantages__middle-block-number {
@@ -2594,7 +2592,7 @@ ul {
   .contacts__address {
     width: 100%;
     padding: 66px 47px 34px 132px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
   }
 
   .contacts__address h3 {
@@ -2610,7 +2608,7 @@ ul {
   .contacts__address dt {
     font-size: 20px;
     line-height: 150%;
-    margin-bottom: 7px;
+    margin-bottom: 3px;
   }
 
   .contacts__address dd {
@@ -2878,7 +2876,7 @@ ul {
   }
 
   .footer__inner {
-    padding: 44px 46px;
+    padding: 46px 46px;
   }
 
   .footer__content-wrapper .main-unit__logo-footer {
@@ -2890,12 +2888,16 @@ ul {
     height: 18px;
   }
 
+  .footer__list {
+    margin: 0px auto auto 58px;
+  }
+
   .footer__item {
     margin-right: 30px;
   }
 
   .footer__social {
-    width: 100px;
+    width: 120px;
   }
 
   .footer__social a {
@@ -3504,7 +3506,7 @@ ul {
   .contacts__address .contacts__address-text {
     width: 100%;
     border: none;
-    margin-bottom: 13px;
+    margin-bottom: 27px;
   }
 
   .contacts__address .contacts__phone-text {
@@ -3565,7 +3567,9 @@ ul {
   }
 
   .footer__social a {
-    margin-left: 35px;
+    margin-left: 0;
+    width: 32px;
+    margin-right: 35px;
   }
 
   .footer__social .footer__vk-link {

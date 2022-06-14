@@ -2,6 +2,7 @@
   text-align: center;
   padding: 66px 50px;
   color: $color-sapphire;
+  background-color: $color-ghost-white;
 
   h3 {
     font-family: "Bebas Neue", sans-serif;
@@ -317,9 +318,10 @@
   }
 
   @include vp-1279 {
-    top: 57%;
+    top: 49%;
     padding: 14px 55px 37px;
     width: 442px;
+    height: 47%;
 
     .advantages__middle-block-number {
       padding: 46px 0 18px;
